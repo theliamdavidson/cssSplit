@@ -4,13 +4,17 @@ from vessel_math import Vessel_math
 from capture_ocr import capture_decoder
 
 #--------------temp.py below
-    
+
 def vessel_looper(vessel_group):
+    index_failure = 0
     return_list = []
     for vessels in vessel_group:
+        index_failure += 1
+        print(index_failure)
         for index, index_values in enumerate(patient_instance.vessels):
             if index_values == vessels:
                 patient_instance.vessel_name_index = index
+                break
         patient_instance.vessel_value_holder[0] = vessels
         Not_Complete = True
         while Not_Complete:
@@ -28,6 +32,8 @@ if __name__ == "__main__":
     nvi = Nvi_Test()
     food_vessels = food.vessels_for_food_test
     nvi_vessels = nvi.vessels
+    food_values = vessel_looper(food_vessels)
+    food.store_bvg2_value(food_values)
     food_values = vessel_looper(food_vessels)
     food.store_bvg2_value(food_values)
     #nvi_values = vessel_looper(nvi_vessels)

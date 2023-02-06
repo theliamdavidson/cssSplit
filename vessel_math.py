@@ -10,31 +10,31 @@ class Vessel_math(Vessel_Definition):
         self.recent_iterator = 00
         self.vessel_value_holder = ["", [None, None, None, None]]
     def value_holder(self, value_to_store):
-        try:
-            type_of_value = value_to_store[0]
-            value = value_to_store[1]
-            vessel_list = self.vessel_value_holder[1]
-            if type_of_value == "PI":
-                if vessel_list[0] == None:
-                    vessel_list[0] = value
+        #try:
+        type_of_value = value_to_store[0]
+        value = value_to_store[1]
+        vessel_list = self.vessel_value_holder[1]
+        if type_of_value == "PI":
+            if vessel_list[0] == None:
+                vessel_list[0] = value
 
-                elif vessel_list[1] == None:
-                    vessel_list[1] = value
-                    
-            elif type_of_value == "VF":
-                if vessel_list[2] == None:
-                    vessel_list[2] = value
+            elif vessel_list[1] == None:
+                vessel_list[1] = value
+                
+        elif type_of_value == "VF":
+            if vessel_list[2] == None:
+                vessel_list[2] = value
 
-                elif vessel_list[3] == None:
-                    vessel_list[3] = value
-            #print(vessel_list)
-            self.vessel_value_holder[1] = vessel_list
-            return(self.completed_vessel_actions())
+            elif vessel_list[3] == None:
+                vessel_list[3] = value
+        #print(vessel_list)
+        self.vessel_value_holder[1] = vessel_list
+        return(self.completed_vessel_actions())
             
-        except:
-            print("vessels",self.vessel_values)
-            print("index", self.vessel_name_index)
-            print("error occured, these are the values")
+        #except:
+        #    print("vessels",self.vessel_values)
+        #    print("index", self.vessel_name_index)
+        #    print("error occured, these are the values")
 
     def completed_vessel_actions(self):
         # in addition to the name, this function checks for completion and returns whether ot os actually complete or just faking
