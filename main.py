@@ -8,7 +8,9 @@ from capture_ocr import capture_decoder
 def vessel_looper(vessel_group):
     return_list = []
     for vessels in vessel_group:
-        print(vessels)
+        for index, index_values in enumerate(patient_instance.vessels):
+            if index_values == vessels:
+                patient_instance.vessel_name_index = index
         patient_instance.vessel_value_holder[0] = vessels
         Not_Complete = True
         while Not_Complete:
@@ -28,13 +30,14 @@ if __name__ == "__main__":
     nvi_vessels = nvi.vessels
     food_values = vessel_looper(food_vessels)
     food.store_bvg2_value(food_values)
-    nvi_values = vessel_looper(nvi_vessels)
+    #nvi_values = vessel_looper(nvi_vessels)
             #patient_instance.converter(vessel_array)
     
 
     print("onto vessel calculations -------------------------------------------")
-    print(food.vessel_bvg2s)
-    print(food.vessel_bvg2_values)
+    print("vessel",food.vessel_bvg2s)
+    print("bvg2 values",food.vessel_bvg2_values)
+    print("vf",food.vessel_vf_upper_values)
     #print(patient_instance.macro_vessel_calculations())
     print("------------------------------------------------------------------------------------------------------------------")
 

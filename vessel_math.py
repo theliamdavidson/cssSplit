@@ -34,6 +34,7 @@ class Vessel_math(Vessel_Definition):
         except:
             print("vessels",self.vessel_values)
             print("index", self.vessel_name_index)
+            print("error occured, these are the values")
 
     def completed_vessel_actions(self):
         # in addition to the name, this function checks for completion and returns whether ot os actually complete or just faking
@@ -42,7 +43,10 @@ class Vessel_math(Vessel_Definition):
                 print(vessel_list)
                 return("not done")
         self.recent_iterator = 5
-        bvg2 = self.converter(self.vessel_value_holder)
+        send_list = [self.vessel_value_holder[0]]
+        for values in vessel_list:
+            send_list.append(values)
+        bvg2 = self.converter(send_list)
         self.completed_vessel_values.append(self.vessel_values[self.vessel_name_index])
         self.vessel_value_holder[1]=[None, None, None, None] 
         self.vessel_name_index = self.vessel_name_index + 1
