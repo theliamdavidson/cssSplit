@@ -46,7 +46,7 @@ if __name__ == "__main__":
     print("vf",food.vessel_vf_upper_values)
     #print(patient_instance.macro_vessel_calculations())
     print("------------------------------------------------------------------------------------------------------------------")
-
+    food.food_test_report()
     #print(patient_instance.macro_vessel_results)
     #patient_instance.neurovascular_index()
     #print(patient_instance.file_output)
