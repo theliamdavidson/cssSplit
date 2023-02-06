@@ -5,13 +5,9 @@ from capture_ocr import capture_decoder
 
 #--------------temp.py below
     
-
-
-if __name__ == "__main__":
-    patient_instance = Vessel_math()
-    food = Food_Test()
-    nvi = Nvi_Test()
-    for vessels in food.vessels_for_food_test:
+def vessel_looper(vessel_group):
+    return_list = []
+    for vessels in vessel_group:
         print(vessels)
         patient_instance.vessel_value_holder[0] = vessels
         Not_Complete = True
@@ -22,12 +18,23 @@ if __name__ == "__main__":
             #print(is_complete)
             if value_holder_return != "not done":
                 Not_Complete = False
-                food.store_value(vessels, value_holder_return)
+                return_list.append([vessels, value_holder_return])
+    return(return_list)
+if __name__ == "__main__":
+    patient_instance = Vessel_math()
+    food = Food_Test()
+    nvi = Nvi_Test()
+    food_vessels = food.vessels_for_food_test
+    nvi_vessels = nvi.vessels
+    food_values = vessel_looper(food_vessels)
+    food.store_bvg2_value(food_values)
+    nvi_values = vessel_looper(nvi_vessels)
             #patient_instance.converter(vessel_array)
     
 
     print("onto vessel calculations -------------------------------------------")
-
+    print(food.vessel_bvg2s)
+    print(food.vessel_bvg2_values)
     #print(patient_instance.macro_vessel_calculations())
     print("------------------------------------------------------------------------------------------------------------------")
 
