@@ -120,12 +120,18 @@ class Vessel_math(Vessel_Definition):
             return (rounded_digits)
 
     def stand_dev(self, data):
-        if data[0] in self.arterial_control_builder:
-            store = True
-            name = data[0]
-        else:
-            store = False
-        data.pop(0)             # remove vessel name
+        #if data[0] in self.arterial_control_builder:
+        #    store = True
+        #    name = data[0]
+        #else:
+        store = False
+
+        try:
+            float(data[0])
+        except:
+            data.pop(0)             # remove vessel name, will change so that groups will send name in own category
+
+
         sampSize = len(data)
         sum = 0.0
         standardDeviation = 0.0
