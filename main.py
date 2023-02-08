@@ -2,6 +2,7 @@ from food_test import Food_Test
 from nvi_test import Nvi_Test
 from vessel_math import Vessel_math
 from capture_ocr import capture_decoder
+import logging
 
 #--------------temp.py below
 
@@ -27,6 +28,13 @@ def vessel_looper(vessel_group):
                 return_list.append([vessels, value_holder_return])
     return(return_list)
 if __name__ == "__main__":
+    logging.basicConfig(filename="newfile.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='w')
+    logger = logging.getLogger()
+ 
+# Setting the threshold of logger to DEBUG
+    logger.setLevel(logging.INFO)
     patient_instance = Vessel_math()
     food = Food_Test()
     nvi = Nvi_Test()
@@ -36,23 +44,20 @@ if __name__ == "__main__":
     food.store_bvg2_value(food_values)
     food_values = vessel_looper(food_vessels)
     food.store_bvg2_value(food_values)
-    #nvi_values = vessel_looper(nvi_vessels)
-            #patient_instance.converter(vessel_array)
-    print("onto vessel calculations -------------------------------------------")
-    print("vessel",food.vessel_bvg2s)
-    print("bvg2 values",food.vessel_bvg2_values)
-    print("vf",food.vessel_vf_upper_values)
-    #print(patient_instance.macro_vessel_calculations())
+    
+    logger.info("vessel",food.vessel_bvg2s)
+    logger.info("bvg2 values",food.vessel_bvg2_values)
+    logger.info("vf",food.vessel_vf_upper_values)
     print("------------------------------------------------------------------------------------------------------------------")
     food.food_test_report()
     nvi_values = vessel_looper(nvi_vessels)
     nvi.store_bvg2_value(nvi_values)
     #print(nvi_values)
-    print(nvi.vessel_values)
-    print(nvi.group_holder)
-    print(nvi.macro_vessel_calculations())
+    logger.info(nvi.vessel_values)
+    logger.info(nvi.group_holder)
+    logger.info(nvi.macro_vessel_calculations())
     nvi.neurovascular_index()
-    print(nvi.file_output)
+    logger.info(nvi.file_output)
     #print(patient_instance.macro_vessel_results)
     #patient_instance.neurovascular_index()
     #print(patient_instance.file_output)
