@@ -12,6 +12,7 @@ class Nvi_Test(nvi_test_definitions):
                         self.vessel_values[index][1][point_num] = self.float_2_rounded_return(data_point)
                     #place bvg2 values self.vessel_bvg2s.append([values[0],values[1][0]])
                     self.bvg_value_placer(values[0], values[1][0])
+                    break
 
     def completed_checker(self, index):
         returnlist = []
@@ -29,5 +30,6 @@ class Nvi_Test(nvi_test_definitions):
             if vessel_name in groups:
                 sub_group_index = groups.index(vessel_name)
                 self.group_holder[group_index][sub_group_index] = vessel_data
+                
 
     
