@@ -49,6 +49,7 @@ if __name__ == "__main__":
     nvi.store_bvg2_value(nvi_values)
     #print(nvi_values)
     print(nvi.vessel_values)
+    print(nvi.group_holder)
     #print(patient_instance.macro_vessel_results)
     #patient_instance.neurovascular_index()
     #print(patient_instance.file_output)

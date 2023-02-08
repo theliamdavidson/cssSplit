@@ -8,7 +8,8 @@ class Nvi_Test(nvi_test_definitions):
         for values in value_input:
             for index, vessels in enumerate(self.vessel_values):
                 if vessels[0] == values[0]:
-                    self.vessel_values[index][1] = values[1][1]
+                    for point_num, data_point in enumerate(values[1][1]):
+                        self.vessel_values[index][1][point_num] = self.float_2_rounded_return(data_point)
                     #place bvg2 values self.vessel_bvg2s.append([values[0],values[1][0]])
                     self.bvg_value_placer(values[0], values[1][0])
 
