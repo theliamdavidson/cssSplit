@@ -9,6 +9,7 @@ class Vessel_math(Vessel_Definition):
         #self.file_instance = file_parser()
         self.recent_iterator = 00
         self.vessel_value_holder = ["", [None, None, None, None]]
+
     def value_holder(self, value_to_store):
         #try:
         type_of_value = value_to_store[0]
@@ -120,18 +121,6 @@ class Vessel_math(Vessel_Definition):
             return (rounded_digits)
 
     def stand_dev(self, data):
-        #if data[0] in self.arterial_control_builder:
-        #    store = True
-        #    name = data[0]
-        #else:
-        store = False
-
-        try:
-            float(data[0])
-        except:
-            data.pop(0)             # remove vessel name, will change so that groups will send name in own category
-
-
         sampSize = len(data)
         sum = 0.0
         standardDeviation = 0.0
@@ -141,31 +130,7 @@ class Vessel_math(Vessel_Definition):
         mean = sum/sampSize
         for i in range(sampSize):
             standardDeviation += pow(data[i] - mean, 2)
-        if store == True:
-            self.arterial_control_holder.append([name, sqrt(standardDeviation/sampSize)])
-            self.arterial_control_builder.remove(name)
         return sqrt(standardDeviation/sampSize) 
-
-    def completed_checker(self, index):
-        returnlist = []
-        for values in self.group_holder[index]:
-            if values == None:                  # must check that the vessel group was completed
-                print("error, empty; these values were found", returnlist)
-                print()
-                print("this is the group:", self.group_holder[index])
-                return(None)                    # as the parent function can be called at any time
-            returnlist.append(values)           # otherwise, disregard the whole group
-        return(returnlist)
-
-    def bvg_value_placer(self, vessel_bvgs):
-        vessel_name = vessel_bvgs[0]
-        vessel_data = vessel_bvgs[1]
-        for group_index, groups in enumerate(self.bvg_groupings):
-            if vessel_name in groups:
-                sub_group_index = groups.index(vessel_name)
-                self.group_holder[group_index][sub_group_index] = vessel_data
-
-    
 
 
 if __name__ == "__main__":
