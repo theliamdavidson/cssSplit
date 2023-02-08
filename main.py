@@ -38,8 +38,6 @@ if __name__ == "__main__":
     food.store_bvg2_value(food_values)
     #nvi_values = vessel_looper(nvi_vessels)
             #patient_instance.converter(vessel_array)
-    
-
     print("onto vessel calculations -------------------------------------------")
     print("vessel",food.vessel_bvg2s)
     print("bvg2 values",food.vessel_bvg2_values)
@@ -47,6 +45,7 @@ if __name__ == "__main__":
     #print(patient_instance.macro_vessel_calculations())
     print("------------------------------------------------------------------------------------------------------------------")
     food.food_test_report()
+    nvi_values = vessel_looper(nvi_vessels)
     #print(patient_instance.macro_vessel_results)
     #patient_instance.neurovascular_index()
     #print(patient_instance.file_output)
