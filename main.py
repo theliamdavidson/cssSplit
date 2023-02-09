@@ -7,11 +7,8 @@ import logging
 #--------------temp.py below
 
 def vessel_looper(vessel_group):
-    index_failure = 0
     return_list = []
     for vessels in vessel_group:
-        index_failure += 1
-        print(index_failure)
         for index, index_values in enumerate(patient_instance.vessels):
             if index_values == vessels:
                 patient_instance.vessel_name_index = index
