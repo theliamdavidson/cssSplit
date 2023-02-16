@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
-import vessel_math
+from food_test import Food_Test
+from nvi_test import Nvi_Test
+from vessel_math import Vessel_math
 app = Flask(__name__)
 
 def index_call():
@@ -134,9 +136,10 @@ def view_data():
 
 @app.route('/results/', methods=['GET','POST'])
 def results():
-    
-    patient_instance.macro_vessel_calculations()
-    
+    if test_type == "nvi":
+       nvi.macro_vessel_calculations()
+    elif test_type == "food":
+        food.food_test_report()
     return render_template("results.html", 
                             macro_vessel_values = patient_instance.macro_vessel_results, 
                             name=patient_instance.patient_name)
@@ -163,5 +166,8 @@ def delete_recent():
     return(index_call())    #will eventually have a page to undo a deletion
     
 if __name__ == '__main__':
-    patient_instance = vessel_math.Vessel_math()
+    patient_instance = Vessel_math()
+    food = Food_Test()
+    nvi = Nvi_Test()
+    test_type = None
     app.run( debug = True, host='0.0.0.0')
