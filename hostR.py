@@ -136,12 +136,15 @@ def view_data():
 
 @app.route('/results/', methods=['GET','POST'])
 def results():
+    post_val = []
     if test_type == "nvi":
        nvi.macro_vessel_calculations()
+       post_val = nvi.macro_vessel_results
     elif test_type == "food":
         food.food_test_report()
+        post_val = food.food_test_results
     return render_template("results.html", 
-                            macro_vessel_values = patient_instance.macro_vessel_results, 
+                            macro_vessel_values = post_val, 
                             name=patient_instance.patient_name)
 
 @app.route('/print_data/', methods=['GET','POST'])
