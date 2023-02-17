@@ -95,6 +95,8 @@ def confirm_data_response():
 
 @app.route('/read_data/', methods=['POST', 'GET'])
 def read_data_response():
+    print(request.form.get('Food Test'))
+    print(request.form.get('NVI Test'))
     if patient_instance.patient_name == "":
         patient_instance.patient_name = request.form.get("fname")
     return(index_call())
