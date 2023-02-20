@@ -194,3 +194,24 @@ Release 303
 
 
 2023-02-20 09:39:23,565  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\hostR.py', reloading
+2023-02-20 09:48:02,268 Vasc Carotid
+
+TISO.2 MI1.3
+
+we
+
+4,0cm-
+
+2023-02-20 09:48:02,291 127.0.0.1 - - [20/Feb/2023 09:48:02] "POST /landing/Food HTTP/1.1" 200 -
+2023-02-20 09:48:02,342 127.0.0.1 - - [20/Feb/2023 09:48:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-20 09:48:05,724 127.0.0.1 - - [20/Feb/2023 09:48:05] "[32mPOST /read_data HTTP/1.1[0m" 308 -
+2023-02-20 09:48:06,473 Vasc Carotid
+
+TISO.2 MI1.3
+
+we
+
+4,0cm-
+
+2023-02-20 09:48:06,476 127.0.0.1 - - [20/Feb/2023 09:48:06] "POST /read_data/ HTTP/1.1" 200 -
+2023-02-20 09:48:06,496 127.0.0.1 - - [20/Feb/2023 09:48:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
