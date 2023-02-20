@@ -28,6 +28,13 @@ def althome():
     patient_instance.__init__()
     return render_template('home.html')
 
+@app.route('/landing/<test>', methods=['POST','GET'])
+def first_tasks(test):    
+    patient_instance.test_type = test
+    patient_instance.patient_name = request.form.get("fname")
+    return(index_call())
+         
+
 @app.route('/about/')
 def about():
     return render_template('about.html')
@@ -95,10 +102,6 @@ def confirm_data_response():
 
 @app.route('/read_data/', methods=['POST', 'GET'])
 def read_data_response():
-    print(request.form.get('Food Test'))
-    print(request.form.get('NVI Test'))
-    if patient_instance.patient_name == "":
-        patient_instance.patient_name = request.form.get("fname")
     return(index_call())
 
 @app.route('/manual_entry', methods=['POST','GET'])
@@ -139,10 +142,10 @@ def view_data():
 @app.route('/results/', methods=['GET','POST'])
 def results():
     post_val = []
-    if test_type == "nvi":
+    if patient_instance.test_type == "NVI":
        nvi.macro_vessel_calculations()
        post_val = nvi.macro_vessel_results
-    elif test_type == "food":
+    elif patient_instance.test_type == "Food":
         food.food_test_report()
         post_val = food.food_test_results
     return render_template("results.html", 
@@ -174,5 +177,4 @@ if __name__ == '__main__':
     patient_instance = Vessel_math()
     food = Food_Test()
     nvi = Nvi_Test()
-    test_type = None
     app.run( debug = True, host='0.0.0.0')
