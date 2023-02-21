@@ -4,6 +4,15 @@ from nvi_test import Nvi_Test
 from program_scaffold import Test_Proctor
 app = Flask(__name__)
 
+def converter_store(vessel_vals):
+    vessel_name = vessel_vals[0]
+    vessel_value = vessel_vals[1]
+    if patient_instance.test_type == "Food":
+        return_val = food.converter(vessel_name, vessel_value)
+        food.store_bvg2_value(vessel_name, vessel_value, return_val)
+    else:
+        return_val = nvi.converter(vessel_name, vessel_value)
+        nvi.store_bvg2_value(vessel_name, vessel_value, return_val)
 def index_call():
     value = patient_instance.value_hunter()
 
@@ -95,7 +104,9 @@ def confirm_vessel():
 
 @app.route('/confirm_data/', methods=['POST'])
 def confirm_data_response():
-    patient_instance.value_holder(patient_instance.temp_discovered_value_holder)        
+    response = patient_instance.value_holder(patient_instance.temp_discovered_value_holder) 
+    if response is not None:
+        converter_store(response)       
     return(index_call())
 
 @app.route('/read_data/', methods=['POST', 'GET'])
