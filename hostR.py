@@ -16,6 +16,7 @@ def index_call():
                             vessels = patient_instance.vessels,
                             name = patient_instance.patient_name, 
                             num = value_name + ": " + value, 
+                            test = patient_instance.test_type,
                             current_vessel_values = selected_vessel[1])
 
 @app.route('/')
@@ -32,6 +33,7 @@ def althome():
 def first_tasks(test):    
     patient_instance.test_type = test
     patient_instance.patient_name = request.form.get("fname")
+    print(patient_instance.patient_name)
     return(index_call())
          
 
