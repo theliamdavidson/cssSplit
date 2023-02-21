@@ -95,7 +95,7 @@ def confirm_vessel():
 
 @app.route('/confirm_data/', methods=['POST'])
 def confirm_data_response():
-    patient_instance.value_holder()        
+    patient_instance.value_holder(patient_instance.temp_discovered_value_holder)        
     return(index_call())
 
 @app.route('/read_data/', methods=['POST', 'GET'])

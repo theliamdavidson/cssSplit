@@ -633,3 +633,58 @@ Enabled
 2023-02-21 13:59:02,796 127.0.0.1 - - [21/Feb/2023 13:59:02] "POST /landing/ HTTP/1.1" 200 -
 2023-02-21 13:59:02,825 127.0.0.1 - - [21/Feb/2023 13:59:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 2023-02-21 13:59:42,897  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\hostR.py', reloading
+2023-02-21 14:21:42,491 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 14:21:42,514 127.0.0.1 - - [21/Feb/2023 14:21:42] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 14:21:42,572 127.0.0.1 - - [21/Feb/2023 14:21:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 14:22:46,431 127.0.0.1 - - [21/Feb/2023 14:22:46] "[32mPOST /read_data HTTP/1.1[0m" 308 -
+2023-02-21 14:22:47,329 Vasc Carotid
+
+L124
+22Hz
+
+60°
+
+TISO.2 MIO.7
+
+wows
+
+: 128.9
+
+PSV 1240mis, [J
+EDV 0,000 cm/s
+MDV 0.000 cms
+
+RI 1.00 |=
+PI 7.51
+TAPV 16.5 cm/s
+28.9
+- emis
+4.0cm=
+
+
+2023-02-21 14:22:47,333 127.0.0.1 - - [21/Feb/2023 14:22:47] "POST /read_data/ HTTP/1.1" 200 -
+2023-02-21 14:22:47,354 127.0.0.1 - - [21/Feb/2023 14:22:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 14:22:52,055 127.0.0.1 - - [21/Feb/2023 14:22:52] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-02-21 14:22:52,083 127.0.0.1 - - [21/Feb/2023 14:22:52] "[35m[1mPOST /confirm_data/ HTTP/1.1[0m" 500 -
+2023-02-21 14:22:52,114 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-21 14:22:52,116 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-21 14:22:52,149 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-21 14:22:52,166 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-21 14:23:16,005  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\vessel_math_definitions.py', reloading
