@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
     <body>
-        {% extends "layout.html" %}
-        {% block content %}
-        <div class="container">
-        <div class="data_content_box">
-            <div class="home">
-                <form method="POST" action="/landing">
-                    Name: <input type="text" name="fname" required><br>
-                    <p>NVI: <input type="radio" id="NVI" name="test" value="NVI" required></p>
-                    <p>FOOD:<input type="radio" id="Food" name="test" value="Food" required></p>
-                    <input type="submit" value="Submit">
-                </form>
+        <head> 
+            <title>Neuropathic View</title>
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        </head>
+      <body>
+        <div class="screen_content">
+          <header>
+            <div class="header_container">
+              <h1 class="logo">Neuropathic View</h1>
+      
             </div>
-        </div>
+          </header>
+        {% block content %}
+            <div class="home">
+                
+                <form method="POST" action="/landing">
+                    <div class="flex-container">
+                    <div class="left-group">
+                    <div class="home-text">
+                        <p>Name:</p>
+                        <p>Test Type:</p>
+                    </div>
+                    </div>
+                    <div class="right-group">
+                        <p><input type="text" name="fname" required></p>
+                        <input type="radio" id="NVI" name="test" value="NVI" required>
+                        <input type="radio" id="Food" name="test" value="Food" required>
+                        <div class="home-text">
+                            <p></p>
+                            &nbsp&nbsp
+                            <b>NVI</b>
+                            &nbsp &nbsp 
+                            <b>FOOD</b>
+                        </div>
+                    </div>
+                     
+                    
+                    </div>
+                    <div class="data_content_box">
+                        &nbsp&nbsp&nbsp&nbsp<input type="submit" value="Submit">
+                    </div>
+                </form>
+            
+            </div>
         </div>
         {% endblock %}
     </body>
