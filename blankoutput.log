@@ -327,3 +327,44 @@ Enabled
 
 2023-02-21 08:36:36,543 127.0.0.1 - - [21/Feb/2023 08:36:36] "POST /read_data/ HTTP/1.1" 200 -
 2023-02-21 08:36:36,566 127.0.0.1 - - [21/Feb/2023 08:36:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 08:38:00,745  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\hostR.py', reloading
+2023-02-21 08:38:13,538 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 08:38:13,549 127.0.0.1 - - [21/Feb/2023 08:38:13] "POST /read_data/ HTTP/1.1" 200 -
+2023-02-21 08:38:13,578 127.0.0.1 - - [21/Feb/2023 08:38:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 08:38:50,836 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 08:38:50,847 127.0.0.1 - - [21/Feb/2023 08:38:50] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 08:38:50,873 127.0.0.1 - - [21/Feb/2023 08:38:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

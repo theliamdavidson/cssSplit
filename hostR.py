@@ -19,12 +19,12 @@ def index_call():
                             test = patient_instance.test_type,
                             current_vessel_values = selected_vessel[1])
 
-@app.route('/')
+@app.route('/', methods=['POST','GET'])
 def home():
     patient_instance.__init__()
     return render_template('home.html')
 
-@app.route('/home')
+@app.route('/home', methods=['POST','GET'])
 def althome():
     patient_instance.__init__()
     return render_template('home.html')

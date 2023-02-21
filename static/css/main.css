@@ -66,6 +66,10 @@ input[type=submit]{
   display: inline-block; 
   
 }
+input[type=radio]{
+  transform: scale(3);
+  margin: 7px 20px;
+}
 div.data_form{
   width: 40%;
   margin: auto;
