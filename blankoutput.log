@@ -447,3 +447,189 @@ Enabled
 2023-02-21 08:46:44,546 127.0.0.1 - - [21/Feb/2023 08:46:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 2023-02-21 08:46:53,718 127.0.0.1 - - [21/Feb/2023 08:46:53] "GET / HTTP/1.1" 200 -
 2023-02-21 08:46:53,740 127.0.0.1 - - [21/Feb/2023 08:46:53] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-02-21 10:43:25,057 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 10:43:25,074 127.0.0.1 - - [21/Feb/2023 10:43:25] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 10:43:25,110 127.0.0.1 - - [21/Feb/2023 10:43:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:43:29,709 127.0.0.1 - - [21/Feb/2023 10:43:29] "GET / HTTP/1.1" 200 -
+2023-02-21 10:43:29,731 127.0.0.1 - - [21/Feb/2023 10:43:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:43:32,930 127.0.0.1 - - [21/Feb/2023 10:43:32] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 10:43:33,696 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 10:43:33,699 127.0.0.1 - - [21/Feb/2023 10:43:33] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 10:43:33,727 127.0.0.1 - - [21/Feb/2023 10:43:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:44:15,442 127.0.0.1 - - [21/Feb/2023 10:44:15] "GET /update_vessel HTTP/1.1" 200 -
+2023-02-21 10:44:15,464 127.0.0.1 - - [21/Feb/2023 10:44:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:44:17,363 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 10:44:17,366 127.0.0.1 - - [21/Feb/2023 10:44:17] "POST /confirm_vessel HTTP/1.1" 200 -
+2023-02-21 10:44:17,393 127.0.0.1 - - [21/Feb/2023 10:44:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:44:21,392 127.0.0.1 - - [21/Feb/2023 10:44:21] "GET / HTTP/1.1" 200 -
+2023-02-21 10:44:21,414 127.0.0.1 - - [21/Feb/2023 10:44:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 10:44:49,951 127.0.0.1 - - [21/Feb/2023 10:44:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:54:01,773 127.0.0.1 - - [21/Feb/2023 13:54:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:55:43,091 127.0.0.1 - - [21/Feb/2023 13:55:43] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 13:55:43,958 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 13:55:43,962 127.0.0.1 - - [21/Feb/2023 13:55:43] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 13:55:43,990 127.0.0.1 - - [21/Feb/2023 13:55:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:55:53,836 127.0.0.1 - - [21/Feb/2023 13:55:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:57:21,294 127.0.0.1 - - [21/Feb/2023 13:57:21] "GET / HTTP/1.1" 200 -
+2023-02-21 13:57:21,321 127.0.0.1 - - [21/Feb/2023 13:57:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:57:48,059 127.0.0.1 - - [21/Feb/2023 13:57:48] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 13:57:48,913 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 13:57:48,916 127.0.0.1 - - [21/Feb/2023 13:57:48] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 13:57:48,950 127.0.0.1 - - [21/Feb/2023 13:57:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:58:05,540 127.0.0.1 - - [21/Feb/2023 13:58:05] "GET / HTTP/1.1" 200 -
+2023-02-21 13:58:05,572 127.0.0.1 - - [21/Feb/2023 13:58:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:58:16,497 127.0.0.1 - - [21/Feb/2023 13:58:16] "GET / HTTP/1.1" 200 -
+2023-02-21 13:58:16,527 127.0.0.1 - - [21/Feb/2023 13:58:16] "GET /static/css/main.css HTTP/1.1" 200 -
+2023-02-21 13:58:21,991 127.0.0.1 - - [21/Feb/2023 13:58:21] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 13:58:22,845 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 13:58:22,848 127.0.0.1 - - [21/Feb/2023 13:58:22] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 13:58:22,889 127.0.0.1 - - [21/Feb/2023 13:58:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:58:29,514 127.0.0.1 - - [21/Feb/2023 13:58:29] "GET / HTTP/1.1" 200 -
+2023-02-21 13:58:29,539 127.0.0.1 - - [21/Feb/2023 13:58:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:58:33,080 127.0.0.1 - - [21/Feb/2023 13:58:33] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 13:58:33,846 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 13:58:33,849 127.0.0.1 - - [21/Feb/2023 13:58:33] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 13:58:33,897 127.0.0.1 - - [21/Feb/2023 13:58:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:58:38,454 127.0.0.1 - - [21/Feb/2023 13:58:38] "GET / HTTP/1.1" 200 -
+2023-02-21 13:58:38,480 127.0.0.1 - - [21/Feb/2023 13:58:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:59:02,030 127.0.0.1 - - [21/Feb/2023 13:59:02] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-02-21 13:59:02,793 nectviy
+
+Enabled
+
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Fabled
+Enabled
+Enabled
+Enabled
+Enabled
+Enabled
+
+Enabled
+
+2023-02-21 13:59:02,796 127.0.0.1 - - [21/Feb/2023 13:59:02] "POST /landing/ HTTP/1.1" 200 -
+2023-02-21 13:59:02,825 127.0.0.1 - - [21/Feb/2023 13:59:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-21 13:59:42,897  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\hostR.py', reloading

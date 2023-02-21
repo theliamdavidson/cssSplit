@@ -116,7 +116,7 @@ a {
 .right-group {
   flex: 1;
   border: 2px black;
-
+  text-align: center;
 }
 .vessel-group {
   text-align: center;

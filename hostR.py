@@ -22,11 +22,15 @@ def index_call():
 @app.route('/', methods=['POST','GET'])
 def home():
     patient_instance.__init__()
+    food.__init__()
+    nvi.__init__()
     return render_template('home.html')
 
 @app.route('/home', methods=['POST','GET'])
 def althome():
     patient_instance.__init__()
+    food.__init__()
+    nvi.__init__()
     return render_template('home.html')
 
 @app.route('/landing/', methods=['POST','GET'])
