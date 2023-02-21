@@ -29,18 +29,13 @@ def althome():
     patient_instance.__init__()
     return render_template('home.html')
 
-@app.route('/landing/<test>', methods=['POST','GET'])
-def first_tasks(test):    
-    patient_instance.test_type = test
+@app.route('/landing/', methods=['POST','GET'])
+def first_tasks():    
+    patient_instance.test_type = request.form.get("test")
     patient_instance.patient_name = request.form.get("fname")
     print(patient_instance.patient_name)
     return(index_call())
          
-
-@app.route('/about/')
-def about():
-    return render_template('about.html')
-
 @app.route('/index/', methods=['POST','GET'])
 def hello():
     patient_instance.patient_name = request.form.get("fname")
@@ -94,12 +89,9 @@ def confirm_vessel():
     
     return(index_call())
 
-    
-
 @app.route('/confirm_data/', methods=['POST'])
 def confirm_data_response():
     patient_instance.value_holder()        
-    
     return(index_call())
 
 @app.route('/read_data/', methods=['POST', 'GET'])

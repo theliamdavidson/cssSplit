@@ -6,12 +6,11 @@
         <div class="container">
         <div class="data_content_box">
             <div class="home">
-                Name: <input type="text" name="fname" required><br>
-                <form method="POST" action="/landing/Food">
-                    <input type="submit" value="Food Test">
-                </form>
-                <form method="POST" action="/landing/NVI">
-                    <input type="submit" value="NVI Test">
+                <form method="POST" action="/read_data">
+                    Name: <input type="text" name="fname" required><br>
+                    NVI: <input type="radio" id="NVI" name="test" value="NVI">
+                    FOOD:<input type="radio" id="Food" name="test" value="Food">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
