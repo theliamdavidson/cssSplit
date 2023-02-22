@@ -43,10 +43,7 @@ def vessel_setter():
         elif vessel in patient_instance.skin_vessels:
             skin.append(vessel)
     return(ue,le,viscera,skin)
-            
-
-            
-
+                 
 @app.route('/', methods=['POST','GET'])
 def home():
     patient_instance.__init__()
@@ -68,11 +65,6 @@ def first_tasks():
     print(patient_instance.patient_name)
     return(index_call())
          
-@app.route('/index/', methods=['POST','GET'])
-def hello():
-    return render_template("index.html",
-                            name=patient_instance.patient_name)
-
 @app.route('/update_vessel', methods=['POST','GET'])
 def change_current_vessel():  
     if patient_instance.test_type == "Food":
@@ -188,11 +180,24 @@ def print_data():
 
 @app.route('/delete_last', methods=['GET','POST'])
 def delete_recent():
-    deletion_attempt = patient_instance.deletion()
-    if deletion_attempt == 6:
-        return(index_call())
-    return(index_call())    #will eventually have a page to undo a deletion
     
+    selected_vessel = patient_instance.index_checker()
+    return(render_template("deletion_page.html",
+                            selected_vessel = selected_vessel[0],
+                            vessels = patient_instance.vessels,
+                            current_vessel_values = selected_vessel[1]))    
+
+@app.route('/confirm_delete', methods=['GET','POST'])
+def confirm_and_return():
+    value_one = request.form.get("piu")
+    value_two = request.form.get("vfu")
+    value_three = request.form.get("pil")
+    value_four = request.form.get("vfl")
+    print(value_one, value_two, value_three, value_four)
+    deletion_attempt = patient_instance.deletion([value_one, value_two, value_three, value_four])
+    print(deletion_attempt)
+    return(index_call())
+
 if __name__ == '__main__':
     patient_instance = Test_Proctor()
     food = Food_Test()
