@@ -29,20 +29,23 @@ def index_call():
                             current_vessel_values = selected_vessel[1])
 
 def vessel_setter():
-    send_vessels = []
-    ue = []
-    le = []
-    viscera = []
-    skin = []
-    completed = []
-    ingroup = False
-    for vessels in patient_instance.vessels:
-        ingroup = False
-        for finished_vessels in patient_instance.completed_vessel_values:
-            if vessels in food.vessels_for_food_test:
-                ingroup = True
-        if ingroup == True:
-            send_vessels.append(vessels)
+    ue = ["Upper Extremity"]
+    le = ["Lower Extremity"]
+    viscera = ["Viscera"]
+    skin = ["Skin"]
+    for vessel in food.vessels_for_food_test:
+        if vessel in patient_instance.UE_vessels:
+            ue.append(vessel)
+        elif vessel in patient_instance.LE_vessels:
+            le.append(vessel)
+        elif vessel in patient_instance.viscera_vessels:
+            viscera.append(vessel)
+        elif vessel in patient_instance.skin_vessels:
+            skin.append(vessel)
+    return(ue,le,viscera,skin)
+            
+
+            
 
 @app.route('/', methods=['POST','GET'])
 def home():
@@ -72,15 +75,19 @@ def hello():
 
 @app.route('/update_vessel', methods=['POST','GET'])
 def change_current_vessel():  
-    vessel_list = vessel_setter()
+    if patient_instance.test_type == "Food":
+        vessel_list = vessel_setter()
+    else:
+        vessel_list = [patient_instance.UE_vessels, patient_instance.LE_vessels, \
+            patient_instance.viscera_vessels, patient_instance.skin_vessels]
 
     return render_template("vessel.html",
                             name=patient_instance.patient_name,
                             finished_vessel_values=patient_instance.completed_vessel_values,
-                            UE_vessels = patient_instance.UE_vessels,
-                            LE_vessels = patient_instance.LE_vessels,
-                            viscera_vessels = patient_instance.viscera_vessels,
-                            skin_vessels = patient_instance.skin_vessels)
+                            UE_vessels = vessel_list[0],
+                            LE_vessels = vessel_list[1],
+                            viscera_vessels = vessel_list[2],
+                            skin_vessels = vessel_list[3])
                             
 @app.route('/confirm_vessel', methods=['POST','GET'])
 def confirm_vessel():
