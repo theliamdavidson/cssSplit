@@ -12,7 +12,7 @@ def converter_store(vessel_vals):
         food.store_bvg2_value(vessel_name, vessel_value, return_val)
     else:
         return_val = nvi.converter(vessel_name, vessel_value)
-        nvi.store_bvg2_value(vessel_name, vessel_value, return_val)
+        nvi.store_vessel_values(vessel_name, vessel_value, return_val)
 def index_call():
     value = patient_instance.value_hunter()
 

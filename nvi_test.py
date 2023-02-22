@@ -4,16 +4,15 @@ class Nvi_Test(nvi_test_definitions):
     def __init__(self):
         super().__init__()
 
-    def store_bvg2_value(self, value_input):
-        for values in value_input:
-            for index, vessels in enumerate(self.vessel_values):
-                if vessels[0] == values[0]:
-                    if vessels[0] in self.vessel_exceptions:
-                        self.vessel_exception_holder.append([vessels[0],values[1][1][1]])
-                    for point_num, data_point in enumerate(values[1][1]):
-                        self.vessel_values[index][1][point_num] = self.float_2_rounded_return(data_point)
-                    self.bvg_value_placer(values[0], values[1][0])
-                    break
+    def store_vessel_values(self, vessel_name, vessel_value, bvg2value):
+        for index, vessels in enumerate(self.vessel_values):
+            if vessels[0] == vessel_name:
+                if vessel_name in self.vessel_exceptions:
+                    self.vessel_exception_holder.append([vessel_name,vessel_value[1]])
+                for point_num, data_point in enumerate(vessel_value):
+                    self.vessel_values[index][1][point_num] = self.float_2_rounded_return(data_point)
+                self.bvg_value_placer(vessel_name, bvg2value)
+                break
 
     def completed_checker(self, index):
         returnlist = []
