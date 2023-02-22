@@ -9,17 +9,17 @@ def converter_store(vessel_vals):
     vessel_value = vessel_vals[1]
     if patient_instance.test_type == "Food":
         return_val = food.converter(vessel_name, vessel_value)
-        food.store_bvg2_value(vessel_name, vessel_value, return_val)
+        print(return_val)
+        print(food.store_bvg2_value(vessel_name, vessel_value, return_val))
     else:
         return_val = nvi.converter(vessel_name, vessel_value)
-        nvi.store_vessel_values(vessel_name, vessel_value, return_val)
+        print(return_val)
+        print(nvi.store_vessel_values(vessel_name, vessel_value, return_val))
+
 def index_call():
     value = patient_instance.value_hunter()
-
     value_name = patient_instance.vfOpi
-
     selected_vessel = patient_instance.index_checker()
-    
     return render_template("index.html", 
                             selected_vessel = selected_vessel[0],
                             vessels = patient_instance.vessels,

@@ -12,7 +12,8 @@ class Nvi_Test(nvi_test_definitions):
                 for point_num, data_point in enumerate(vessel_value):
                     self.vessel_values[index][1][point_num] = self.float_2_rounded_return(data_point)
                 self.bvg_value_placer(vessel_name, bvg2value)
-                break
+                return("done")
+        return("not done")
 
     def completed_checker(self, index):
         returnlist = []
