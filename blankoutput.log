@@ -688,3 +688,13 @@ TAPV 16.5 cm/s
 2023-02-21 14:22:52,149 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
 2023-02-21 14:22:52,166 127.0.0.1 - - [21/Feb/2023 14:22:52] "[36mGET /confirm_data/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
 2023-02-21 14:23:16,005  * Detected change in 'C:\\Users\\liam pc\\Documents\\vscode\\work_stuff\\cssSplit\\cssSplit\\vessel_math_definitions.py', reloading
+2023-02-22 08:54:03,465 Vasc Carotid TISO.2 MI1.3
+
+we
+
+4,0cm-
+
+2023-02-22 08:54:03,491 127.0.0.1 - - [22/Feb/2023 08:54:03] "POST /landing/ HTTP/1.1" 200 -
+2023-02-22 08:54:03,516 127.0.0.1 - - [22/Feb/2023 08:54:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-22 08:54:05,058 127.0.0.1 - - [22/Feb/2023 08:54:05] "GET /update_vessel HTTP/1.1" 200 -
+2023-02-22 08:54:05,079 127.0.0.1 - - [22/Feb/2023 08:54:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

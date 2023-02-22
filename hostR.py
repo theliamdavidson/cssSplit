@@ -28,6 +28,22 @@ def index_call():
                             test = patient_instance.test_type,
                             current_vessel_values = selected_vessel[1])
 
+def vessel_setter():
+    send_vessels = []
+    ue = []
+    le = []
+    viscera = []
+    skin = []
+    completed = []
+    ingroup = False
+    for vessels in patient_instance.vessels:
+        ingroup = False
+        for finished_vessels in patient_instance.completed_vessel_values:
+            if vessels in food.vessels_for_food_test:
+                ingroup = True
+        if ingroup == True:
+            send_vessels.append(vessels)
+
 @app.route('/', methods=['POST','GET'])
 def home():
     patient_instance.__init__()
@@ -51,24 +67,12 @@ def first_tasks():
          
 @app.route('/index/', methods=['POST','GET'])
 def hello():
-    patient_instance.patient_name = request.form.get("fname")
-    print( request.form.get("fpid"))
     return render_template("index.html",
                             name=patient_instance.patient_name)
 
 @app.route('/update_vessel', methods=['POST','GET'])
 def change_current_vessel():  
-    if patient_instance.patient_name == "":
-        patient_instance.patient_name = request.form.get("fname")
-    send_vessels = []
-    ingroup = False
-    for vessels in patient_instance.vessels:
-        ingroup = False
-        for finished_vessels in patient_instance.completed_vessel_values:
-            if vessels in finished_vessels[0]:
-                ingroup = True
-        if ingroup == False:
-            send_vessels.append(vessels)
+    vessel_list = vessel_setter()
 
     return render_template("vessel.html",
                             name=patient_instance.patient_name,
