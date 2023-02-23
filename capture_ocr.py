@@ -2,6 +2,7 @@ import cv2 as cv
 import pytesseract
 from PIL import Image
 import logging
+from random import randint
 
 def capture_from_image():
     cap = cv.VideoCapture(0)
@@ -16,7 +17,7 @@ def capture_from_image():
         cv.destroyAllWindows()
         return gray
 
-def capture_decoder():
+def cd():#capture_decoder():
     '''
         Will return a value in the form of [string, string].
         The return when a value isn't found is ["vessel not found", "0.00"]
@@ -76,6 +77,16 @@ def capture_decoder():
             except:
                 print()
         return(capture_decoder_return)
+
+def capture_decoder():
+    '''
+        Debug version of the ocr program, without all the fluff included in the main program
+        Will return a value in the form of [string, string].
+    '''
+    names =[ "PI", "VF" ]
+    will_loop = randint(0,1)
+    return([names[will_loop],str(randint(1, 450)/4.5)])
+    
 
 if __name__ == "__main__":
     while True:

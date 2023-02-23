@@ -2,24 +2,32 @@ from flask import Flask, render_template, request
 from food_test import Food_Test
 from nvi_test import Nvi_Test
 from program_scaffold import Test_Proctor
+import logging
 app = Flask(__name__)
 
 def converter_store(vessel_vals):
     vessel_name = vessel_vals[0]
     vessel_value = vessel_vals[1]
+    print(vessel_vals)
     if patient_instance.test_type == "Food":
         return_val = food.converter(vessel_name, vessel_value)
         print(return_val)
         print(food.store_bvg2_value(vessel_name, vessel_value, return_val))
     else:
         return_val = nvi.converter(vessel_name, vessel_value)
-        print(return_val)
-        print(nvi.store_vessel_values(vessel_name, vessel_value, return_val))
+        print("converter return",return_val)
+        print("nvi store",nvi.store_vessel_values(vessel_name, vessel_value, return_val))
+    print("b4", patient_instance.vessel_name_index)
+    patient_instance.vessel_name_index += 1
+    patient_instance.vessel_value_holder = ["", [None, None, None, None]]
+    print("aft", patient_instance.vessel_name_index)
 
 def index_call():
     value = patient_instance.value_hunter()
     value_name = patient_instance.vfOpi
     selected_vessel = patient_instance.index_checker()
+    logger.debug(nvi.vessel_values)
+    logger.debug(patient_instance.vessel_values)
     return render_template("index.html", 
                             selected_vessel = selected_vessel[0],
                             vessels = patient_instance.vessels,
@@ -98,16 +106,18 @@ def confirm_vessel():
     print(vessel_i)
     
     for numbs, name in enumerate(patient_instance.vessels):
+        print("searching for the vessel",name)
         if name == vessel_i:
             patient_instance.vessel_name_index = numbs
+            print(patient_instance.vessel_name_index)
             break
-    print(request.form.get("vessel"))
-    
+        
     return(index_call())
 
 @app.route('/confirm_data/', methods=['POST'])
 def confirm_data_response():
-    response = patient_instance.value_holder(patient_instance.temp_discovered_value_holder) 
+    response = patient_instance.value_holder() 
+    print(patient_instance.vessel_value_holder)
     if response is not None:
         converter_store(response)       
     return(index_call())
@@ -197,9 +207,16 @@ def confirm_and_return():
     deletion_attempt = patient_instance.deletion([value_one, value_two, value_three, value_four])
     print(deletion_attempt)
     return(index_call())
+    
 
 if __name__ == '__main__':
     patient_instance = Test_Proctor()
     food = Food_Test()
     nvi = Nvi_Test()
-    app.run( debug = True, host='0.0.0.0')
+    logging.basicConfig(filename="blankoutput.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='a')
+    logger = logging.getLogger()
+    # Setting the threshold of logger to DEBUG
+    logger.setLevel(logging.DEBUG)
+    app.run( debug = True, host='0.0.0.0', use_reloader=False)
