@@ -178,7 +178,14 @@ def results():
 def print_data():
     patient_instance.PID = request.form.get('fnum')
     print("pid", patient_instance.PID) 
-    completed = patient_instance.bvg_2_csv_file()
+    if patient_instance.test_type == "NVI":
+        nvi.neurovascular_index()
+        file_to_print = nvi.file_output
+        raw_data = nvi.vessel_values
+    else:
+        file_to_print = food.file_output
+        raw_data = food.vessel_bvg2_values
+    completed = patient_instance.bvg_2_csv_file(file_to_print, raw_data)
     if completed is True:
         success = ""
     else:
