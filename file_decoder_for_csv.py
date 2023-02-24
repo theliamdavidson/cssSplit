@@ -50,4 +50,3 @@ class file_parser:
         wk['data'] = data_dataframe[0]
         wk.to_csv(self.pid + "_" + self.date +"_system_summary.csv", index=False, encoding='utf-8')
         
-#pd.read_csv('DavidsonLiam.csv')

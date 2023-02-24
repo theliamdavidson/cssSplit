@@ -183,8 +183,8 @@ def print_data():
         file_to_print = nvi.file_output
         raw_data = nvi.vessel_values
     else:
-        file_to_print = food.file_output
-        raw_data = food.vessel_bvg2_values
+        file_to_print = food.food_test_results
+        raw_data = food.vessel_values
     completed = patient_instance.bvg_2_csv_file(file_to_print, raw_data)
     if completed is True:
         success = ""
@@ -226,4 +226,4 @@ if __name__ == '__main__':
     logger = logging.getLogger()
     # Setting the threshold of logger to DEBUG
     logger.setLevel(logging.DEBUG)
-    app.run( debug = True, host='0.0.0.0', use_reloader=False)
+    app.run(host='0.0.0.0', debug = True, use_reloader=False)
