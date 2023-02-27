@@ -104,16 +104,12 @@ def confirm_vessel():
         vessel_i = ves_three
     elif ves_four is not None:
         vessel_i = ves_four
-    print(vessel_i)
     
     for numbs, name in enumerate(patient_instance.vessels):
-        print("searching for the vessel",name)
         if name == vessel_i:
-            print(patient_instance.vessel_values[patient_instance.vessel_name_index][0], "b4", patient_instance.vessel_values[patient_instance.vessel_name_index][1])
             patient_instance.vessel_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
-            print(patient_instance.vessel_values[patient_instance.vessel_name_index][0],"aft",patient_instance.vessel_values[patient_instance.vessel_name_index][1])
             patient_instance.vessel_name_index = numbs
-            print(patient_instance.vessel_name_index)
+            patient_instance.vessel_value_holder = patient_instance.vessel_values[patient_instance.vessel_name_index ]
             break
         
     return(index_call())
