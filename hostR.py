@@ -17,9 +17,10 @@ def converter_store(vessel_vals):
         return_val = nvi.converter(vessel_name, vessel_value)
         print("converter return",return_val)
         print("nvi store",nvi.store_vessel_values(vessel_name, vessel_value, return_val))
+    patient_instance.completed_vessel_values.append(vessel_vals)
     print("b4", patient_instance.vessel_name_index)
-    patient_instance.vessel_name_index += 1
-    patient_instance.vessel_value_holder = ["", [None, None, None, None]]
+    patient_instance.switcher()
+    #patient_instance.vessel_value_holder = ["", [None, None, None, None]]
     print("aft", patient_instance.vessel_name_index)
 
 def index_call():
@@ -108,6 +109,9 @@ def confirm_vessel():
     for numbs, name in enumerate(patient_instance.vessels):
         print("searching for the vessel",name)
         if name == vessel_i:
+            print(patient_instance.vessel_values[patient_instance.vessel_name_index][0], "b4", patient_instance.vessel_values[patient_instance.vessel_name_index][1])
+            patient_instance.vessel_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
+            print(patient_instance.vessel_values[patient_instance.vessel_name_index][0],"aft",patient_instance.vessel_values[patient_instance.vessel_name_index][1])
             patient_instance.vessel_name_index = numbs
             print(patient_instance.vessel_name_index)
             break
