@@ -19,23 +19,24 @@ def converter_store(vessel_vals):
         print("nvi store",nvi.store_vessel_values(vessel_name, vessel_value, return_val))
     patient_instance.completed_vessel_values.append(vessel_vals)
     print("b4", patient_instance.vessel_name_index)
-    patient_instance.switcher()
-    #patient_instance.vessel_value_holder = ["", [None, None, None, None]]
+    switcher_val = patient_instance.switcher()
+    if switcher_val is not None:
+        patient_instance.vessel_value_holder = [switcher_val, [None, None, None, None]]
     print("aft", patient_instance.vessel_name_index)
 
-def index_call():
-    value = patient_instance.value_hunter()
-    value_name = patient_instance.vfOpi
-    selected_vessel = patient_instance.index_checker()
-    logger.debug(nvi.vessel_values)
-    logger.debug(patient_instance.vessel_values)
+def index_call(end=False):
+    if end == False:
+        value = patient_instance.value_hunter()
+        value_name = patient_instance.vfOpi
+        selected_vessel = patient_instance.index_checker()
+        logger.debug(nvi.vessel_values)
+        logger.debug(patient_instance.vessel_values)
     return render_template("index.html", 
                             selected_vessel = selected_vessel[0],
-                            vessels = patient_instance.vessels,
                             name = patient_instance.patient_name, 
                             num = value_name + ": " + value, 
                             test = patient_instance.test_type,
-                            current_vessel_values = selected_vessel[1])
+                            current_vessel_values = selected_vessel[1]) #vessels = patient_instance.vessels,
 
 def vessel_setter():
     ue = ["Upper Extremity"]
