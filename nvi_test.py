@@ -15,22 +15,11 @@ class Nvi_Test(nvi_test_definitions):
                 return("done")
         return("not done")
 
-    def completed_checker(self, index):
-        returnlist = []
-        for values in self.group_holder[index]:
-            if values == None:                  # must check that the vessel group was completed
-                print("error, empty; these values were found", returnlist)
-                print()
-                print("this is the group:", self.group_holder[index])
-                return(None)                    # as the parent function can be called at any time
-            returnlist.append(values)           # otherwise, disregard the whole group
-        return(returnlist)
-
     def bvg_value_placer(self, vessel_name, vessel_data):
         for group_index, groups in enumerate(self.bvg_groupings):
             if vessel_name in groups:
                 sub_group_index = groups.index(vessel_name)
                 self.group_holder[group_index][sub_group_index] = vessel_data
-                
+                print("found", vessel_name, "in", self.group_holder[group_index])
 
     

@@ -10,6 +10,7 @@ class Vessel_math(Vessel_Definition):
             return (rounded_digits)
 
     def stand_dev(self, data):
+        print("in standard dev", data)
         sampSize = len(data)
         sum = 0.0
         standardDeviation = 0.0
