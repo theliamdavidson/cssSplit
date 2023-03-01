@@ -21,8 +21,9 @@ def converter_store(vessel_vals):
     print("b4", patient_instance.vessel_name_index)
     switcher_val = patient_instance.switcher()
     if switcher_val is not None:
-        patient_instance.vessel_value_holder = [switcher_val, [None, None, None, None]]
+        return switcher_val
     print("aft", patient_instance.vessel_name_index)
+    return None
 
 def index_call(end=False):
     if end == False:
@@ -31,13 +32,18 @@ def index_call(end=False):
         selected_vessel = patient_instance.index_checker()
         logger.debug(nvi.vessel_values)
         logger.debug(patient_instance.vessel_values)
+        return render_template("index.html", 
+                                selected_vessel = selected_vessel[0],
+                                name = patient_instance.patient_name, 
+                                num = value_name + ": " + value, 
+                                test = patient_instance.test_type,
+                                current_vessel_values = selected_vessel[1])
     return render_template("index.html", 
-                            selected_vessel = selected_vessel[0],
-                            name = patient_instance.patient_name, 
-                            num = value_name + ": " + value, 
-                            test = patient_instance.test_type,
-                            current_vessel_values = selected_vessel[1]) #vessels = patient_instance.vessels,
-
+                                selected_vessel =  "None",
+                                name = patient_instance.patient_name, 
+                                num = "None" + ": " + "None", 
+                                test = "Completed",
+                                current_vessel_values = "None")
 def vessel_setter():
     ue = ["Upper Extremity"]
     le = ["Lower Extremity"]
@@ -120,7 +126,9 @@ def confirm_data_response():
     response = patient_instance.value_holder() 
     print(patient_instance.vessel_value_holder)
     if response is not None:
-        converter_store(response)       
+        done = converter_store(response)    
+        if done is not None:
+            return(index_call(True))
     return(index_call())
 
 @app.route('/read_data/', methods=['POST', 'GET'])
@@ -180,6 +188,7 @@ def print_data():
     patient_instance.PID = request.form.get('fnum')
     print("pid", patient_instance.PID) 
     if patient_instance.test_type == "NVI":
+        nvi.macro_vessel_calculations()
         nvi.neurovascular_index()
         file_to_print = nvi.file_output
         raw_data = nvi.vessel_values
