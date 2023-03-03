@@ -16,6 +16,8 @@ class Nvi_Test(nvi_test_definitions):
         return("not done")
 
     def bvg_value_placer(self, vessel_name, vessel_data):
+        self.vessel_bvg2.append([vessel_name, vessel_data])
+        print("BVG2 ", self.vessel_bvg2)
         for group_index, groups in enumerate(self.bvg_groupings):
             if vessel_name in groups:
                 sub_group_index = groups.index(vessel_name)
