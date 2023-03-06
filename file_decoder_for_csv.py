@@ -10,10 +10,8 @@ class file_parser:
         #print(data_list)
         return data_list
 
-    def csv_creator(self, filedata ):
+    def raw_data_creator(self, filedata ):
         #print("_______------------__________",filedata)    
-        sd = pd.DataFrame(filedata,columns=['vessels','data'])
-    
         sd = pd.DataFrame(filedata)
         sd.to_csv(self.pid + "_" +self.date + "_rawdata.csv", encoding='utf-8')
         return("done")
