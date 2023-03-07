@@ -48,7 +48,7 @@ class Vessel_math(Vessel_Definition):
             next_array.append(vessels[1])
             next_array.append(vessels[3])
             print(index,"--------------------------------------------------------")
-            if index <= 32:
+            if index <= 9:
                 group_array.append("")
                 next_array.append("")
 
@@ -110,15 +110,19 @@ class Vessel_math(Vessel_Definition):
         file_output.pop(-1)
         for left_values in self.value_builder(data_storage[1]):
             file_output.append(left_values)
-
         for right_values in self.value_builder(data_storage[2]):
             file_output.append(right_values)
-        file_output.insert(-1, "")
+        file_output[-5].insert(0, "")
+        file_output[-4].insert(0, "")
         for left_values in self.value_builder(data_storage[3]):
             file_output.append(left_values)
-        file_output.insert(-1, "")
+        file_output[-5].insert(0, "")
+        file_output[-4].insert(0, "")
         for values in self.value_builder(data_storage[4]):
             file_output.append(values)
+        for count in range(15):
+            file_output[-5].insert(0, "")
+            file_output[-4].insert(0, "")
         return file_output
 
 if __name__ == "__main__":
