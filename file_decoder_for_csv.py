@@ -1,16 +1,4 @@
 import pandas as pd
-
-def replace_chars(string_to_fix):
-        return string_to_fix.replace(None, '')
-
-def recursively_apply(list_of_lists, chars_to_swap):
-    for index, items in enumerate(list_of_lists):
-        if type(items) is list:
-            list_of_lists[index] = recursively_apply(list_of_lists[index], chars_to_swap)
-        elif type(items) is str:
-            list_of_lists[index] = chars_to_swap(items)
-    return list_of_lists
-
 class file_parser:
     def __init__(self):
         self.patient_name = ""
@@ -22,11 +10,8 @@ class file_parser:
         return data_list
     
     def raw_data_creator(self, filedata):
-
-        scrubbed =recursively_apply(filedata, replace_chars)
-        print(scrubbed)
         #print("_______------------__________",filedata)    
-        sd = pd.DataFrame(scrubbed)
+        sd = pd.DataFrame(filedata)
         sd.to_csv(self.pid + "_" +self.date + "_rawdata.csv", encoding='utf-8', index=False, header=False)
         return("done")
 

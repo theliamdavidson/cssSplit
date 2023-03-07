@@ -177,7 +177,7 @@ def results():
        nvi.macro_vessel_calculations()
        post_val = nvi.macro_vessel_results
     elif patient_instance.test_type == "Food":
-        food.food_test_report()
+        food.food_test_report() 
         post_val = food.food_test_results
     return render_template("results.html", 
                             macro_vessel_values = post_val, 
