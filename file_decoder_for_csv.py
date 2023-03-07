@@ -1,9 +1,9 @@
 import pandas as pd
 class file_parser:
-    def __init__(self):
-        self.patient_name = ""
-        self.pid = ""
-        self.date = ""
+    def __init__(self, patient_name = "", pid = 0000, date = 1/1/2022):
+        self.patient_name = patient_name
+        self.pid = pid
+        self.date = date
     def list_creator(self):
         data_list = self.csv_list.values.tolist()
         #print(data_list)

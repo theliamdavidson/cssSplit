@@ -194,7 +194,7 @@ def print_data():
         #print(nvi.vessel_exception_holder)
     else:
         file_to_print = food.food_test_results
-        raw_data = food.vessel_values
+        raw_data = food.raw_file_output()
     completed = patient_instance.bvg_2_csv_file(file_to_print, raw_data)
     if completed is True:
         success = ""

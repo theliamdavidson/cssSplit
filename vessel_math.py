@@ -3,14 +3,12 @@ from vessel_math_definitions import Vessel_Definition
 class Vessel_math(Vessel_Definition):
     def __init__(self):
         super().__init__()
-        #self.file_instance = file_parser()
 
     def float_2_rounded_return(self, digits):
             rounded_digits = round( (float(digits)) *100) / 100
             return (rounded_digits)
 
     def stand_dev(self, data):
-        print("in standard dev", data)
         sampSize = len(data)
         sum = 0.0
         standardDeviation = 0.0
@@ -24,8 +22,6 @@ class Vessel_math(Vessel_Definition):
 
     def output_looper(self, vessel_name):
         for rows, groups in enumerate(self.vessel_rows):
-                print(groups)
-                print(vessel_name)
                 for columns, vessels in enumerate(groups):
                     if vessel_name == vessels:
                         return rows, columns
@@ -39,15 +35,11 @@ class Vessel_math(Vessel_Definition):
         group_array = []
         next_array = []
         for index, vessels in enumerate(sent_values):
-            vessels = ['no' if val is None else val for val in vessels]
-            #for value in vessels:
-            #    if value is None:
-            #        value == ""
+            vessels = ['' if val is None else val for val in vessels]
             group_array.append(vessels[0])
             group_array.append(vessels[2])
             next_array.append(vessels[1])
             next_array.append(vessels[3])
-            print(index,"--------------------------------------------------------")
             if index <= 9:
                 group_array.append("")
                 next_array.append("")
@@ -101,9 +93,6 @@ class Vessel_math(Vessel_Definition):
         for results in self.vessel_values:
             rows, columns = self.output_looper(results[0])
             data_storage[rows][columns] = results[1]
-            print(rows, columns, data_storage[rows][columns])
-        print(data_storage)
-        print("----------------------------------------")
         #(data_storage[1]])
         for right_values in self.value_builder(data_storage[0]):
             file_output.append(right_values)
