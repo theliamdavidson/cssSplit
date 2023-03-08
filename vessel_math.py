@@ -34,8 +34,10 @@ class Vessel_math(Vessel_Definition):
         '''
         group_array = []
         next_array = []
+        print("sent values",sent_values)
         for index, vessels in enumerate(sent_values):
             vessels = ['' if val is None else val for val in vessels]
+            print("vessels",vessels)
             group_array.append(vessels[0])
             group_array.append(vessels[2])
             next_array.append(vessels[1])
@@ -46,7 +48,7 @@ class Vessel_math(Vessel_Definition):
 
         return group_array, next_array, [""*39], [""*39], [""*39]
     
-    def raw_file_output(self): 	
+    def raw_file_output(self, test_type): 	
         data_storage = [
                         [
                         [None, None, None, None], [None, None, None, None], \
@@ -94,6 +96,7 @@ class Vessel_math(Vessel_Definition):
             rows, columns = self.output_looper(results[0])
             data_storage[rows][columns] = results[1]
         #(data_storage[1]])
+        print("data_storage",data_storage)
         for right_values in self.value_builder(data_storage[0]):
             file_output.append(right_values)
         file_output.pop(-1)

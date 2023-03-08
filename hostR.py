@@ -190,11 +190,12 @@ def print_data():
     if patient_instance.test_type == "NVI":
         nvi.neurovascular_index()
         file_to_print = nvi.file_output
-        raw_data = nvi.raw_file_output()
+        raw_data = nvi.raw_file_output(patient_instance.test_type)
         #print(nvi.vessel_exception_holder)
     else:
+        
         file_to_print = food.food_test_results
-        raw_data = food.raw_file_output()
+        raw_data = food.raw_file_output(patient_instance.test_type)
     completed = patient_instance.bvg_2_csv_file(file_to_print, raw_data)
     if completed is True:
         success = ""
