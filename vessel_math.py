@@ -25,6 +25,8 @@ class Vessel_math(Vessel_Definition):
                 for columns, vessels in enumerate(groups):
                     if vessel_name == vessels:
                         return rows, columns
+        print("broke out, failure")
+        return -1, -1
 
     def value_builder(self, sent_values):
         '''
@@ -49,72 +51,45 @@ class Vessel_math(Vessel_Definition):
         return group_array, next_array, [""*39], [""*39], [""*39]
     
     def raw_file_output(self, test_type): 	
-        data_storage = [
-                        [
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None]  
-                        ],       \
-                        
-                        [
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None]
-                        ],       \
-                        
-                        [
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None] 
-                        ],                                     \
-                        
-                        [
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None]
-                        ],                                      \
-                        
-                        [
-                        [None, None, None, None], [None, None, None, None], \
-                        [None, None, None, None], [None, None, None, None]
-                        ]                                            \
-                    ]  
         file_output = [[],[]]	
-        for results in self.vessel_values:
+        data_storage = self.vessel_primer(test_type)
+        if test_type == "Food":
+            value_looper = self.food_test_values
+        else:
+            value_looper = self.vessel_values
+        
+        for results in value_looper:
+            print(results)
             rows, columns = self.output_looper(results[0])
             data_storage[rows][columns] = results[1]
         #(data_storage[1]])
         print("data_storage",data_storage)
-        for right_values in self.value_builder(data_storage[0]):
-            file_output.append(right_values)
-        file_output.pop(-1)
-        for left_values in self.value_builder(data_storage[1]):
-            file_output.append(left_values)
-        for right_values in self.value_builder(data_storage[2]):
-            file_output.append(right_values)
-        file_output[-5].insert(0, "")
-        file_output[-4].insert(0, "")
-        for left_values in self.value_builder(data_storage[3]):
-            file_output.append(left_values)
-        file_output[-5].insert(0, "")
-        file_output[-4].insert(0, "")
-        for values in self.value_builder(data_storage[4]):
-            file_output.append(values)
-        for count in range(15):
+        if test_type == "Food":
+            for pre_vals in self.value_builder(data_storage[0]):
+                file_output.append(pre_vals)
+            for post_vals in self.value_builder(data_storage[1]):
+                file_output.append(post_vals)
+        else:
+            # ue values
+            for right_values in self.value_builder(data_storage[0]):
+               file_output.append(right_values)
+            file_output.pop(-1)
+            for left_values in self.value_builder(data_storage[1]):
+                file_output.append(left_values)
+            # le values
+            for right_values in self.value_builder(data_storage[2]):
+                file_output.append(right_values)
             file_output[-5].insert(0, "")
             file_output[-4].insert(0, "")
+            for left_values in self.value_builder(data_storage[3]):
+                file_output.append(left_values)
+            file_output[-5].insert(0, "")
+            file_output[-4].insert(0, "")
+            for values in self.value_builder(data_storage[4]):
+                file_output.append(values)
+            for count in range(15):
+                file_output[-5].insert(0, "")
+                file_output[-4].insert(0, "")
         return file_output
 
 if __name__ == "__main__":
