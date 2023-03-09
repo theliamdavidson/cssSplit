@@ -218,8 +218,8 @@ def delete_recent():
 @app.route('/confirm_delete', methods=['GET','POST'])
 def confirm_and_return():
     value_one = request.form.get("piu")
-    value_two = request.form.get("vfu")
-    value_three = request.form.get("pil")
+    value_two = request.form.get("pil")
+    value_three = request.form.get("vfu")
     value_four = request.form.get("vfl")
     print(value_one, value_two, value_three, value_four)
     deletion_attempt = patient_instance.deletion([value_one, value_two, value_three, value_four])

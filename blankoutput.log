@@ -3942,3 +3942,668 @@
 2023-03-09 13:08:43,376 127.0.0.1 - - [09/Mar/2023 13:08:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 2023-03-09 13:08:44,420 127.0.0.1 - - [09/Mar/2023 13:08:44] "POST / HTTP/1.1" 200 -
 2023-03-09 13:08:44,440 127.0.0.1 - - [09/Mar/2023 13:08:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:02,127 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.17:5000
+2023-03-09 13:10:02,127 [33mPress CTRL+C to quit[0m
+2023-03-09 13:10:06,411 127.0.0.1 - - [09/Mar/2023 13:10:06] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-03-09 13:10:07,492 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:07,494 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:07,494 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:10:07,514 127.0.0.1 - - [09/Mar/2023 13:10:07] "POST /landing/ HTTP/1.1" 200 -
+2023-03-09 13:10:07,565 127.0.0.1 - - [09/Mar/2023 13:10:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:09,652 127.0.0.1 - - [09/Mar/2023 13:10:09] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:10:10,526 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:10,527 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:10,528 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:10:10,529 127.0.0.1 - - [09/Mar/2023 13:10:10] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:10:10,546 127.0.0.1 - - [09/Mar/2023 13:10:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:12,345 127.0.0.1 - - [09/Mar/2023 13:10:12] "GET /delete_last HTTP/1.1" 200 -
+2023-03-09 13:10:12,362 127.0.0.1 - - [09/Mar/2023 13:10:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:15,844 55:05 PM
+
+Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:15,845 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:15,846 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:10:15,847 127.0.0.1 - - [09/Mar/2023 13:10:15] "POST /confirm_delete HTTP/1.1" 200 -
+2023-03-09 13:10:15,871 127.0.0.1 - - [09/Mar/2023 13:10:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:17,262 127.0.0.1 - - [09/Mar/2023 13:10:17] "GET / HTTP/1.1" 200 -
+2023-03-09 13:10:17,281 127.0.0.1 - - [09/Mar/2023 13:10:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:20,275 127.0.0.1 - - [09/Mar/2023 13:10:20] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-03-09 13:10:21,142 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:21,143 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:21,143 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:21,145 127.0.0.1 - - [09/Mar/2023 13:10:21] "POST /landing/ HTTP/1.1" 200 -
+2023-03-09 13:10:21,168 127.0.0.1 - - [09/Mar/2023 13:10:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:22,523 127.0.0.1 - - [09/Mar/2023 13:10:22] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:10:23,390 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:23,391 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:23,392 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:23,393 127.0.0.1 - - [09/Mar/2023 13:10:23] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:10:23,410 127.0.0.1 - - [09/Mar/2023 13:10:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:23,815 127.0.0.1 - - [09/Mar/2023 13:10:23] "GET /delete_last HTTP/1.1" 200 -
+2023-03-09 13:10:23,836 127.0.0.1 - - [09/Mar/2023 13:10:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:10:26,312 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:10:26,313 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:26,313 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:10:26,315 127.0.0.1 - - [09/Mar/2023 13:10:26] "POST /confirm_delete HTTP/1.1" 200 -
+2023-03-09 13:10:26,338 127.0.0.1 - - [09/Mar/2023 13:10:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:43,425 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.17:5000
+2023-03-09 13:12:43,425 [33mPress CTRL+C to quit[0m
+2023-03-09 13:12:43,622 127.0.0.1 - - [09/Mar/2023 13:12:43] "GET / HTTP/1.1" 200 -
+2023-03-09 13:12:43,673 127.0.0.1 - - [09/Mar/2023 13:12:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:46,154 127.0.0.1 - - [09/Mar/2023 13:12:46] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-03-09 13:12:47,208 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:12:47,210 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:12:47,210 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:12:47,224 127.0.0.1 - - [09/Mar/2023 13:12:47] "POST /landing/ HTTP/1.1" 200 -
+2023-03-09 13:12:47,245 127.0.0.1 - - [09/Mar/2023 13:12:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:48,220 127.0.0.1 - - [09/Mar/2023 13:12:48] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:12:49,075 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:12:49,076 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:12:49,076 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:12:49,078 127.0.0.1 - - [09/Mar/2023 13:12:49] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:12:49,095 127.0.0.1 - - [09/Mar/2023 13:12:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:49,986 127.0.0.1 - - [09/Mar/2023 13:12:49] "GET /update_vessel HTTP/1.1" 200 -
+2023-03-09 13:12:50,003 127.0.0.1 - - [09/Mar/2023 13:12:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:52,293 127.0.0.1 - - [09/Mar/2023 13:12:52] "GET /delete_last HTTP/1.1" 200 -
+2023-03-09 13:12:52,310 127.0.0.1 - - [09/Mar/2023 13:12:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:12:54,782 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:12:54,783 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:12:54,783 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:12:54,784 127.0.0.1 - - [09/Mar/2023 13:12:54] "POST /confirm_delete HTTP/1.1" 200 -
+2023-03-09 13:12:54,805 127.0.0.1 - - [09/Mar/2023 13:12:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:22,570 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.17:5000
+2023-03-09 13:13:22,570 [33mPress CTRL+C to quit[0m
+2023-03-09 13:13:26,206 127.0.0.1 - - [09/Mar/2023 13:13:26] "GET / HTTP/1.1" 200 -
+2023-03-09 13:13:26,254 127.0.0.1 - - [09/Mar/2023 13:13:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:29,053 127.0.0.1 - - [09/Mar/2023 13:13:29] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-03-09 13:13:30,103 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:13:30,105 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:13:30,105 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:13:30,119 127.0.0.1 - - [09/Mar/2023 13:13:30] "POST /landing/ HTTP/1.1" 200 -
+2023-03-09 13:13:30,143 127.0.0.1 - - [09/Mar/2023 13:13:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:31,434 127.0.0.1 - - [09/Mar/2023 13:13:31] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:13:32,286 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:13:32,287 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:13:32,287 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:13:32,289 127.0.0.1 - - [09/Mar/2023 13:13:32] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:13:32,308 127.0.0.1 - - [09/Mar/2023 13:13:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:32,619 127.0.0.1 - - [09/Mar/2023 13:13:32] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:13:33,466 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:13:33,467 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:13:33,468 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:13:33,469 127.0.0.1 - - [09/Mar/2023 13:13:33] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:13:33,485 127.0.0.1 - - [09/Mar/2023 13:13:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:33,827 127.0.0.1 - - [09/Mar/2023 13:13:33] "GET /delete_last HTTP/1.1" 200 -
+2023-03-09 13:13:33,844 127.0.0.1 - - [09/Mar/2023 13:13:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:13:36,201 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:13:36,202 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:13:36,202 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:13:36,204 127.0.0.1 - - [09/Mar/2023 13:13:36] "POST /confirm_delete HTTP/1.1" 200 -
+2023-03-09 13:13:36,227 127.0.0.1 - - [09/Mar/2023 13:13:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:15:28,836 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.17:5000
+2023-03-09 13:15:28,836 [33mPress CTRL+C to quit[0m
+2023-03-09 13:15:39,333 127.0.0.1 - - [09/Mar/2023 13:15:39] "GET / HTTP/1.1" 200 -
+2023-03-09 13:15:39,385 127.0.0.1 - - [09/Mar/2023 13:15:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:15:41,984 127.0.0.1 - - [09/Mar/2023 13:15:41] "[32mPOST /landing HTTP/1.1[0m" 308 -
+2023-03-09 13:15:43,051 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:15:43,052 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:15:43,053 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:15:43,067 127.0.0.1 - - [09/Mar/2023 13:15:43] "POST /landing/ HTTP/1.1" 200 -
+2023-03-09 13:15:43,089 127.0.0.1 - - [09/Mar/2023 13:15:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:15:43,916 127.0.0.1 - - [09/Mar/2023 13:15:43] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:15:44,067 127.0.0.1 - - [09/Mar/2023 13:15:44] "[32mPOST /confirm_data HTTP/1.1[0m" 308 -
+2023-03-09 13:15:44,140 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:15:44,140 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:15:44,142 127.0.0.1 - - [09/Mar/2023 13:15:44] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:15:44,758 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:15:44,759 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:15:44,759 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:15:44,760 127.0.0.1 - - [09/Mar/2023 13:15:44] "POST /confirm_data/ HTTP/1.1" 200 -
+2023-03-09 13:15:44,777 127.0.0.1 - - [09/Mar/2023 13:15:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:15:45,956 127.0.0.1 - - [09/Mar/2023 13:15:45] "GET /delete_last HTTP/1.1" 200 -
+2023-03-09 13:15:45,974 127.0.0.1 - - [09/Mar/2023 13:15:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-03-09 13:15:49,240 Vasc Carotid TISO.2 MIO.7
+
+Liza
+
+22Hz 60° wows
+: 4289
+
+2» u PSV 1240mis, [J
+
+87% EDV 0.000 cmis
+
+Ber R50 MDV -41.6 cm/s
+
+HGen RI 1.00 | =
+
+oF PL 22.23
+
+S1% TAPV 7.45 cm/s
+
+3750H2
+
+WF 281Hz -
+
+5.0MHe
+
+Pw
+
+42%
+
+WF 60Hz
+
+4.0cm=
+
+
+2023-03-09 13:15:49,241 [['Left_EI', [None, None, None, None]], ['Lower_Aorta', [None, None, None, None]], ['Upper_Aorta', [None, None, None, None]], ['Right_EI', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Calc', [None, None, None, None]], ['Left_Med_arch', [None, None, None, None]], ['Left_Lat_arch', [None, None, None, None]], ['Left_MT_cutaneous', [None, None, None, None]], ['Left_lower_1st', [None, None, None, None]], ['Left_lower_2nd', [None, None, None, None]], ['Left_lower_3rd', [None, None, None, None]], ['Left_lower_4th', [None, None, None, None]], ['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_1st', [None, None, None, None]], ['Left_2nd', [None, None, None, None]], ['Left_3rd', [None, None, None, None]], ['Left_4th', [None, None, None, None]], ['Left_Brachial', [None, None, None, None]], ['Left_subclavian', [None, None, None, None]], ['Right_Proximal_tib', [None, None, None, None]], ['Right_Proximal_Pero', [None, None, None, None]], ['Right_low_tib', [None, None, None, None]], ['Right_Low_Pero', [None, None, None, None]], ['Right_inter_tib', [None, None, None, None]], ['Right_Inter_Pero', [None, None, None, None]], ['Right_Calc', [None, None, None, None]], ['Right_Med_arch', [None, None, None, None]], ['Right_Lat_arch', [None, None, None, None]], ['Right_MT_cutaneous', [None, None, None, None]], ['Right_lower_1st', [None, None, None, None]], ['Right_lower_2nd', [None, None, None, None]], ['Right_lower_3rd', [None, None, None, None]], ['Right_lower_4th', [None, None, None, None]], ['Right_Proximal_Radial', [None, None, None, None]], ['Right_Proximal_Ulnar', [None, None, None, None]], ['Right_Distal_Radial', [None, None, None, None]], ['Right_Distal_Ulnar', [None, None, None, None]], ['Right_1st', [None, None, None, None]], ['Right_2nd', [None, None, None, None]], ['Right_3rd', [None, None, None, None]], ['Right_4th', [None, None, None, None]], ['Right_Brachial', [None, None, None, None]], ['Right_subclavian', [None, None, None, None]]]
+2023-03-09 13:15:49,241 [['Left_Proximal_Radial', [None, None, None, None]], ['Left_Proximal_Ulnar', [None, None, None, None]], ['Left_Distal_Radial', [None, None, None, None]], ['Left_Distal_Ulnar', [None, None, None, None]], ['Left_Proximal_Pero', [None, None, None, None]], ['Left_Inter_Pero', [None, None, None, None]], ['Left_Proximal_tib', [None, None, None, None]], ['Left_inter_tib', [None, None, None, None]], ['Left_low_tib', [None, None, None, None]], ['Left_Low_Pero', [None, None, None, None]], ['Post_Left_Proximal_Radial', [None, None, None, None]], ['Post_Left_Proximal_Ulnar', [None, None, None, None]], ['Post_Left_Distal_Radial', [None, None, None, None]], ['Post_Left_Distal_Ulnar', [None, None, None, None]], ['Post_Left_Proximal_Pero', [None, None, None, None]], ['Post_Left_Inter_Pero', [None, None, None, None]], ['Post_Left_Proximal_tib', [None, None, None, None]], ['Post_Left_inter_tib', [None, None, None, None]], ['Post_Left_low_tib', [None, None, None, None]], ['Post_Left_Low_Pero', [None, None, None, None]]]
+2023-03-09 13:15:49,242 127.0.0.1 - - [09/Mar/2023 13:15:49] "POST /confirm_delete HTTP/1.1" 200 -
+2023-03-09 13:15:49,265 127.0.0.1 - - [09/Mar/2023 13:15:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
