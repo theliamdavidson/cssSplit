@@ -12,10 +12,12 @@ def converter_store(vessel_vals):
     if patient_instance.test_type == "Food":
         return_val = food.converter(vessel_name, vessel_value)
         print(return_val)
+        patient_instance.food_test_values[patient_instance.vessel_name_index] = vessel_vals
         print(food.store_bvg2_value(vessel_name, vessel_value, return_val))
     else:
         return_val = nvi.converter(vessel_name, vessel_value)
         print("converter return",return_val)
+        patient_instance.vessel_values[patient_instance.vessel_name_index] = vessel_vals
         print("nvi store",nvi.store_vessel_values(vessel_name, vessel_value, return_val))
     patient_instance.completed_vessel_values.append(vessel_vals)
     print("b4", patient_instance.vessel_name_index)
@@ -45,18 +47,20 @@ def index_call(end=False):
                                 test = "Completed",
                                 current_vessel_values = "None")
 def vessel_setter():
-    ue = ["Upper Extremity"]
-    le = ["Lower Extremity"]
-    viscera = ["Viscera"]
-    skin = ["Skin"]
+    ue = ["Upper Extremity Pre"]
+    le = ["Lower Extremity Pre"]
+    viscera = ["Upper Extremity Post"]
+    skin = ["Lower Extremity Post"]
     for vessel in food.vessels_for_food_test:
         if vessel in patient_instance.UE_vessels:
             ue.append(vessel)
         elif vessel in patient_instance.LE_vessels:
             le.append(vessel)
-        elif vessel in patient_instance.viscera_vessels:
+        elif vessel[5:] in patient_instance.UE_vessels:
+            print(vessel)
             viscera.append(vessel)
-        elif vessel in patient_instance.skin_vessels:
+        elif vessel[5:] in patient_instance.LE_vessels:
+            print(vessel)
             skin.append(vessel)
     return(ue,le,viscera,skin)
                  
@@ -111,7 +115,14 @@ def confirm_vessel():
         vessel_i = ves_three
     elif ves_four is not None:
         vessel_i = ves_four
-    
+    if patient_instance.test_type == "Food":
+        for numbs, name in enumerate(patient_instance.vessels_for_food_test):
+            if name == vessel_i:
+                patient_instance.food_test_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
+                patient_instance.vessel_name_index = numbs
+                patient_instance.vessel_value_holder = patient_instance.food_test_values[patient_instance.vessel_name_index ]
+                print(patient_instance.vessel_values)
+                return(index_call())
     for numbs, name in enumerate(patient_instance.vessels):
         if name == vessel_i:
             patient_instance.vessel_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
