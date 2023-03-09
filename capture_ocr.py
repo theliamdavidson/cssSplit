@@ -17,7 +17,7 @@ def capture_from_image():
         cv.destroyAllWindows()
         return gray
 
-def cd():#capture_decoder():
+def capture_decoder():#cd():
     '''
         Will return a value in the form of [string, string].
         The return when a value isn't found is ["vessel not found", "0.00"]
@@ -29,6 +29,7 @@ def cd():#capture_decoder():
     # Setting the threshold of logger to DEBUG
     logger.setLevel(logging.DEBUG)
     searching_for_text = True
+    iterator = 0
     capture_decoder_return = ["vessel not found", "0.00"]
     while searching_for_text:
         img1 = capture_from_image()
@@ -40,7 +41,7 @@ def cd():#capture_decoder():
         except:
             text = "Camera may be disconnected"
         logger.info(text)
-        print(text)
+        
         split_txt = text.split("\n")
         
         #return(split_txt)
@@ -53,34 +54,41 @@ def cd():#capture_decoder():
         array_lengthpi = len(matchespi)
         array_lengthvf = len(matchesvf)
 
-        if array_lengthpi > 0:
-            for items in matchespi:
-                matches = items.split()
-            array_lengthpi = len(matches)
-            name = "PI"
-            #if array_lengthpi >= 3:
-                #logging.debug("long pulsatility index input", matchespi, "end of the long input")
-        elif array_lengthvf > 0:
-            for items in matchesvf:
-                matches = items.split()
-            name = "VF"
-            array_lengthvf = len(matches)
-            #if array_lengthvf >= 5:
-                #logging.debug("long vascular flow input", matchesvf, "end of the long input")
+        if (array_lengthvf > 0) or (array_lengthpi > 0):
+            if array_lengthvf > 0:
+                for items in matchesvf:
+                    matches = items.split()
+                name = "VF"
+                array_lengthvf = len(matches)
+                #if array_lengthvf >= 5:
+                    #logging.debug("long vascular flow input", matchesvf, "end of the long input")
+            elif array_lengthpi > 0:
+                for items in matchespi:
+                    matches = items.split()
+                array_lengthpi = len(matches)
+                name = "PI"
+                #if array_lengthpi >= 3:
+                    #logging.debug("long pulsatility index input", matchespi, "end of the long input")
+            for items in matches:
+                try:
+                    float(items)
+                    capture_decoder_return = [name, items]
+                except:
+                    print()
+            return(capture_decoder_return)
         else:
-            #logger.debug("--------------input without detected values:", text, "--------------end of input")
-            return(["vessel not found", "0.00"])            # thinking about changing how the blank return is formatted
-        for items in matches:
-            try:
-                float(items)
-                capture_decoder_return = [name, items]
-            except:
-                print()
-        return(capture_decoder_return)
+            if iterator <= 2:
+                iterator += 1
+                print(text)
+                print(iterator)
+            else:
+                return(["vessel not found", "0.00"])            
+            # thinking about changing how the blank return is formatted
+        
 
-def capture_decoder():
+def cd():
     '''
-        Debug version of the ocr program, without all the fluff included in the main program
+        Debug version of the ocr program, without the overhead required from the main program
         Will return a value in the form of [string, string].
     '''
     names =[ "PI", "VF" ]
