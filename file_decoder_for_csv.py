@@ -1,9 +1,10 @@
 import pandas as pd
 class file_parser:
-    def __init__(self, patient_name = "", pid = 0000, date = 1/1/2022):
+    def __init__(self, patient_name = "", pid = 0000, date = 1/1/2022, test = "NVI"):
         self.patient_name = patient_name
         self.pid = pid
         self.date = date
+        self.test_type = test
     def list_creator(self):
         data_list = self.csv_list.values.tolist()
         #print(data_list)
@@ -15,18 +16,9 @@ class file_parser:
         sd.to_csv(self.pid + "_" +self.date + "_rawdata.csv", encoding='utf-8', index=False, header=False)
         return("done")
 
-    def output_file(self, data, patient_name, pid, date):
-        try:
-            self.patient_name = patient_name
-            self.pid = pid
-            self.date = date[6:]
-        except:
-            self.patient_name = "test"
-            self.pid = "987654321"
-            self.date = "1_9_23"
-            print()
+    def output_file(self, data):
         print("---------------------------------------------",data)
-        data_list = [patient_name, pid, self.date, "" ,""]   # replace with date
+        data_list = [self.patient_name, self.pid, self.date, "" ,""]   # replace with date
         print(data_list)
         data_list += data                                   
         df = pd.read_csv('Outputfile.csv')
@@ -35,7 +27,7 @@ class file_parser:
         #print(df)
         df['data'] = data_dataframe['data']
         #print(df)
-        file_name = pid + "_" + date + ".csv"
+        file_name = self.pid + "_" + self.date + ".csv"
         df.to_csv(file_name,index=False, encoding='utf-8')
 
     def output_worksheet(self, data):

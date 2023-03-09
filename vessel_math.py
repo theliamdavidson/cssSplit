@@ -51,11 +51,12 @@ class Vessel_math(Vessel_Definition):
         return group_array, next_array, [""*39], [""*39], [""*39]
     
     def raw_file_output(self, test_type): 	
-        file_output = [[],[]]	
+        file_output = [[]]	
         data_storage = self.vessel_primer(test_type)
         if test_type == "Food":
             value_looper = self.food_test_values
         else:
+            file_output.append([])
             value_looper = self.vessel_values
         
         for results in value_looper:
