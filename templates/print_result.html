@@ -11,7 +11,7 @@
             <h1>Patient {{name}}: </h1>
         <div class="data_content_box">
             <div class = "data_form">
-                <form method="POST" action="/home/">
+                <form method="POST" action="{{ url_for('home') }}">
                     <input type="submit" value="Start a new Patient">
                 </form>
                 <form method="POST" action="/read_data">

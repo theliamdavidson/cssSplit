@@ -17,7 +17,8 @@ def capture_from_image():
         cv.destroyAllWindows()
         return gray
 
-def capture_decoder():#cd():
+#cd():
+def cd():
     '''
         Will return a value in the form of [string, string].
         The return when a value isn't found is ["vessel not found", "0.00"]
@@ -86,7 +87,7 @@ def capture_decoder():#cd():
             # thinking about changing how the blank return is formatted
         
 
-def cd():
+def capture_decoder():
     '''
         Debug version of the ocr program, without the overhead required from the main program
         Will return a value in the form of [string, string].

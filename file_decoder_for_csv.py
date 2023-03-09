@@ -39,3 +39,17 @@ class file_parser:
         wk['data'] = data_dataframe[0]
         wk.to_csv(self.pid + "_" + self.date +"_system_summary.csv", index=False, encoding='utf-8')
         
+if __name__ == "__main__":
+    testfile = [["Left_Proximal_Radial",[0, 1, 2, 3]], ["Left_Proximal_Ulnar",[None, None, None, None]],\
+                ["Left_Distal_Radial", [None, None, None, None]], ["Left_Distal_Ulnar", [None, None, None, None]], \
+                ["Left_Proximal_Pero",[None, None, None, None]], ["Left_Inter_Pero", [None, None, None, None]], \
+                ["Left_Proximal_tib", [None, None, None, None]], ["Left_inter_tib", [None, None, None, None]],\
+                ["Left_low_tib", [None, None, None, None]], ["Left_Low_Pero", [None, None, None, None]],\
+                ["Post_Left_Proximal_Radial",[3, 2, 1, 0]], ["Post_Left_Proximal_Ulnar",[None, None, None, None]],\
+                ["Post_Left_Distal_Radial", [None, None, None, None]], ["Post_Left_Distal_Ulnar", [None, None, None, None]], \
+                ["Post_Left_Proximal_Pero",[None, None, None, None]], ["Post_Left_Inter_Pero", [None, None, None, None]], \
+                ["Post_Left_Proximal_tib", [None, None, None, None]], ["Post_Left_inter_tib", [None, None, None, None]],\
+                ["Post_Left_low_tib", [None, None, None, None]], ["Post_Left_Low_Pero", [None, None, None, None]],
+                ]
+    test = file_parser("Nicole", 99999, "3/8/2023", "Food")
+    test.raw_data_creator(testfile)
