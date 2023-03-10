@@ -82,7 +82,7 @@ def althome():
 def first_tasks():    
     patient_instance.test_type = request.form.get("test")
     patient_instance.patient_name = request.form.get("fname")
-    print(patient_instance.patient_name)
+    #print(patient_instance.patient_name)
     return(index_call())
          
 @app.route('/update_vessel', methods=['POST','GET'])
@@ -185,10 +185,10 @@ def view_data():
 def results():
     post_val = []
     if patient_instance.test_type == "NVI":
-       nvi.macro_vessel_calculations()
+       #nvi.macro_vessel_calculations()
        post_val = nvi.macro_vessel_results
     elif patient_instance.test_type == "Food":
-        food.food_test_report() 
+        #food.food_test_report() 
         post_val = food.food_test_results
     return render_template("results.html", 
                             macro_vessel_values = post_val, 
@@ -196,18 +196,15 @@ def results():
 
 @app.route('/print_data/', methods=['GET','POST'])
 def print_data():
-    patient_instance.PID = request.form.get('fnum')
-    print("pid", patient_instance.PID) 
     if patient_instance.test_type == "NVI":
-        nvi.neurovascular_index()
-        file_to_print = nvi.file_output
+        #nvi.neurovascular_index()
+        #file_to_print = nvi.file_output
         raw_data = nvi.raw_file_output(patient_instance.test_type)
         #print(nvi.vessel_exception_holder)
     else:
-        
-        file_to_print = food.food_test_results
+        #file_to_print = food.food_test_results
         raw_data = food.raw_file_output(patient_instance.test_type)
-    completed = patient_instance.bvg_2_csv_file(file_to_print, raw_data)
+    completed = patient_instance.bvg_2_csv_file(raw_data)
     if completed is True:
         success = ""
     else:
