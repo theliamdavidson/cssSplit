@@ -18,7 +18,7 @@ def capture_from_image():
         return gray
 
 #:
-def cd():
+def capture_decoder():
     '''
         Will return a value in the form of [string, string].
         The return when a value isn't found is ["vessel not found", "0.00"]
@@ -30,15 +30,19 @@ def cd():
     # Setting the threshold of logger to DEBUG
     logger.setLevel(logging.DEBUG)
     searching_for_text = True
-    iterator = 0
     capture_decoder_return = ["vessel not found", "0.00"]
     while searching_for_text:
         img1 = capture_from_image()
         if img1 is False:
             return("Camera is not detected")
+        h, w = img1.shape
+        quarterh = h//4
+        halfh = h//2
+        halfw = w//2
+        reduced_img = img1[quarterh:halfh, halfw:]
         pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'    
         try:
-            text = pytesseract.image_to_string(Image.fromarray(img1))
+            text = pytesseract.image_to_string(Image.fromarray(reduced_img))
         except:
             text = "Camera may be disconnected"
         logger.info(text)
@@ -78,16 +82,11 @@ def cd():
                     print()
             return(capture_decoder_return)
         else:
-            if iterator <= 2:
-                iterator += 1
-                print(text)
-                print(iterator)
-            else:
-                return(["vessel not found", "0.00"])            
+            return(["vessel not found", "0.00"])            
             # thinking about changing how the blank return is formatted
         
 
-def capture_decoder():
+def cd():
     '''
         Debug version of the ocr program, without the overhead required from the main program
         Will return a value in the form of [string, string].
@@ -99,6 +98,4 @@ def capture_decoder():
 
 if __name__ == "__main__":
     while True:
-        return_val = capture_decoder()
-        #logging.info
-        print("return_val = ", return_val)
+        print("return_val = ", capture_decoder())
