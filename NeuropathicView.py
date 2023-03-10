@@ -168,7 +168,11 @@ def manual_data():
 
 @app.route('/monophasic_form', methods=['POST', 'GET'])  
 def monophasic():
-    patient_instance.monophasic_values()
+    response = patient_instance.monophasic_values()
+    if response is not None:
+        done = converter_store(response)    
+        if done is not None:
+            return(index_call(True))
     return(index_call())
 
 @app.route('/view_data', methods=['POST','GET'])
