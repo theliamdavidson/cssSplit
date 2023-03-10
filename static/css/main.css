@@ -108,10 +108,23 @@ a {
 .left-group {
   text-align: center;
   flex: 1;
-  margin-top: 2%;
+  margin-top: 8%;
   margin-bottom: 2%;
   display: inline-block;
 
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 30px;
+  line-height: 10em;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .right-group {
   flex: 1;

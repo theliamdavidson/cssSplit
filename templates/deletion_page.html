@@ -8,21 +8,21 @@
         {% extends "layout.html" %}
         {% block content %}
         
-            <h1>Deletion Menu </h1>
-            <h2>Warning! These changes are permanent</h2>
+            <h1>Deletion Menu:</h1>
+            <h3>These Changes are Permanent</h3>
             <div class ="flex-container">
 
                 <div class = "left-group">
                     <form method="POST" action="/confirm_delete">
-
+                            
                             <input type="checkbox" id="piu" name="piu" value="True">
-                            <label for="piu"> PI Upper</label><br>
+                            <label for="piu">PI Upper</label>
                             <input type="checkbox" id="pil" name="pil" value="True">
-                            <label for="pil"> PI Lower</label>
+                            <label for="pil">PI Lower</label><br>
                             <input type="checkbox" id="vfu" name="vfu" value="True">
-                            <label for="vfu"> VF Upper</label><br>
+                            <label for="vfu">VF Upper</label>
                             <input type="checkbox" id="vfl" name="vfl" value="True">
-                            <label for="vfl"> VF Lower</label>
+                            <label for="vfl">VF Lower</label>
 
                         <input type="submit" value="Confirm and Return">
                       </form>

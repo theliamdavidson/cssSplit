@@ -13,7 +13,8 @@ class file_parser:
     def raw_data_creator(self, filedata):
         #print("_______------------__________",filedata)    
         sd = pd.DataFrame(filedata)
-        sd.to_csv(self.patient_name + "_" +self.date + "_rawdata.csv", encoding='utf-8', index=False, header=False)
+        pat_name = self.patient_name.replace(" ","_")
+        sd.to_csv(pat_name + "_" +self.date + "_rawdata.csv", encoding='utf-8', index=False, header=False)
         return("done")
 
     def output_file(self, data):

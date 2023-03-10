@@ -8,8 +8,7 @@
         {% extends "layout.html" %}
         {% block content %}
         
-            <h1>Patient {{name}}: </h1>
-            <h2>{{test}} Test</h2>
+            
             <div class ="flex-container">
 
                 <div class = "left-group">
@@ -27,8 +26,9 @@
                 <div class = "right-group">
                     <a href="{{ url_for('change_current_vessel') }}">
                         <div class = "vessel-name-num">
+                            <h1>{{num}}</h1>
                             <p><b>Vessel: {{selected_vessel}}</b></p>
-                            <p><b>{{num}}</b></p>
+                            
                         </div>
                     </a>
 
