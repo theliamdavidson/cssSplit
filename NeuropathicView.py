@@ -82,7 +82,6 @@ def althome():
 def first_tasks():    
     patient_instance.test_type = request.form.get("test")
     patient_instance.patient_name = request.form.get("fname")
-    #print(patient_instance.patient_name)
     return(index_call())
          
 @app.route('/update_vessel', methods=['POST','GET'])
@@ -120,14 +119,13 @@ def confirm_vessel():
             if name == vessel_i:
                 patient_instance.food_test_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
                 patient_instance.vessel_name_index = numbs
-                patient_instance.vessel_value_holder = patient_instance.food_test_values[patient_instance.vessel_name_index ]
-                print(patient_instance.vessel_values)
+                patient_instance.vessel_value_holder = patient_instance.food_test_values[patient_instance.vessel_name_index]
                 return(index_call())
     for numbs, name in enumerate(patient_instance.vessels):
         if name == vessel_i:
             patient_instance.vessel_values[patient_instance.vessel_name_index][1] = patient_instance.vessel_value_holder[1]
             patient_instance.vessel_name_index = numbs
-            patient_instance.vessel_value_holder = patient_instance.vessel_values[patient_instance.vessel_name_index ]
+            patient_instance.vessel_value_holder = patient_instance.vessel_values[patient_instance.vessel_name_index]
             break
         
     return(index_call())
@@ -146,25 +144,6 @@ def confirm_data_response():
 def read_data_response():
     return(index_call())
 
-@app.route('/manual_entry', methods=['POST','GET'])
-def manual_data():
-    #fix this logic before adding it to the user accessable list
-    try:
-        data_list = [request.form.get("piu"),request.form.get("pil"),request.form.get("vfu"),request.form.get("vfl")]
-    except:
-        print()
-    vessel = patient_instance.temp_discovered_value_holder
-
-    vessel_name = patient_instance.vfOpi
-    value =  vessel
-    
-    selected_vessel = patient_instance.index_checker()
-    return render_template("index.html", 
-                            selected_vessel = selected_vessel[0],
-                            vessels = patient_instance.vessels,
-                            name = patient_instance.patient_name, 
-                            num = vessel_name + ": " + value,  
-                            current_vessel_values = selected_vessel[1])
 
 @app.route('/monophasic_form', methods=['POST', 'GET'])  
 def monophasic():
