@@ -8,23 +8,18 @@ app = Flask(__name__)
 def converter_store(vessel_vals):
     vessel_name = vessel_vals[0]
     vessel_value = vessel_vals[1]
-    print(vessel_vals)
     if patient_instance.test_type == "Food":
         return_val = food.converter(vessel_name, vessel_value)
-        print(return_val)
         patient_instance.food_test_values[patient_instance.vessel_name_index] = vessel_vals
-        print(food.store_bvg2_value(vessel_name, vessel_value, return_val))
+        food.store_bvg2_value(vessel_name, vessel_value, return_val)
     else:
         return_val = nvi.converter(vessel_name, vessel_value)
-        print("converter return",return_val)
         patient_instance.vessel_values[patient_instance.vessel_name_index] = vessel_vals
-        print("nvi store",nvi.store_vessel_values(vessel_name, vessel_value, return_val))
+        nvi.store_vessel_values(vessel_name, vessel_value, return_val)   
     patient_instance.completed_vessel_values.append(vessel_vals)
-    print("b4", patient_instance.vessel_name_index)
     switcher_val = patient_instance.switcher()
     if switcher_val is not None:
         return switcher_val
-    print("aft", patient_instance.vessel_name_index)
     return None
 
 def index_call(end=False):
@@ -57,10 +52,8 @@ def vessel_setter():
         elif vessel in patient_instance.LE_vessels:
             le.append(vessel)
         elif vessel[5:] in patient_instance.UE_vessels:
-            print(vessel)
             viscera.append(vessel)
         elif vessel[5:] in patient_instance.LE_vessels:
-            print(vessel)
             skin.append(vessel)
     return(ue,le,viscera,skin)
                  
@@ -133,7 +126,6 @@ def confirm_vessel():
 @app.route('/confirm_data/', methods=['POST'])
 def confirm_data_response():
     response = patient_instance.value_holder() 
-    print(patient_instance.vessel_value_holder)
     if response is not None:
         done = converter_store(response)    
         if done is not None:
@@ -158,7 +150,6 @@ def monophasic():
 def view_data():
     if patient_instance.patient_name == "":
         patient_instance.patient_name = request.form.get("fname")
-    print(patient_instance.completed_vessel_values)
     return render_template("rawdata.html", 
                             name = patient_instance.patient_name, 
                             micro_vessel_results = patient_instance.completed_vessel_values
@@ -211,9 +202,7 @@ def confirm_and_return():
     value_two = request.form.get("pil")
     value_three = request.form.get("vfu")
     value_four = request.form.get("vfl")
-    print(value_one, value_two, value_three, value_four)
     deletion_attempt = patient_instance.deletion([value_one, value_two, value_three, value_four])
-    print(deletion_attempt)
     return(index_call())
     
 
