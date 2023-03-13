@@ -183,7 +183,6 @@ def print_data():
         #nvi.neurovascular_index()
         #file_to_print = nvi.file_output
         raw_data = nvi.raw_file_output(patient_instance.test_type)
-        #print(nvi.vessel_exception_holder)
     else:
         #file_to_print = food.food_test_results
         raw_data = food.raw_file_output(patient_instance.test_type)
