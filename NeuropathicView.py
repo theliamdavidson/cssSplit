@@ -221,7 +221,7 @@ if __name__ == '__main__':
     patient_instance = Test_Proctor()
     food = Food_Test()
     nvi = Nvi_Test()
-    logging.basicConfig(filename="blankoutput.log",
+    logging.basicConfig(filename="debug.log",
                     format='%(asctime)s %(message)s',
                     filemode='a')
     logger = logging.getLogger()
